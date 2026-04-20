@@ -174,25 +174,38 @@ function answer(data) {
     return customersTop.sort((a, b) => b.totalSpent - a.totalSpent).slice(0, 5);
   };
 
-  // Q15 — Most popular product per category (by quantity ordered)
-  
-
+  // Q16 — Orders with payment failed but not cancelled
+  const getOrdersWithPaymentFailedButNotCancelled = () => {
+    return data.flatMap((c) =>
+      c.orders
+        .filter(
+          (o) => o.payment?.status === "failed" && o.status !== "cancelled",
+        )
+        .map((o) => ({
+          orderId: o.orderId,
+          customerId: c.customerId,
+          customerName: c.name,
+          orderStatus: o.status,
+          paymentStatus: o.payment?.status,
+        })),
+    );
+  };
   return {
-    "Top 5 customers by total spend": getTop5CustomerByTotalSpend(),
-    // "Total revenue per region (with discount applied)":
-    //   getTotalRevenuePerRegion(),
-    // "Customers who left at least one review": customerListWithAtLeastOneReview,
-    // "Average number of items per order": averageNumberOfItemsPerOrder,
-    // "List payment methods used and how many times": paymentMethodCounts,
-    // "All orders placed in a specific month": getOrdersByMonth(2025, 4),
-    // "Count reviews per product": countReviewsPerProduct,
-    // "Count total customers per region": countTotalPerRegion,
-    // "List all unique product categories": listOfUniqueProductsCategories,
-    // "Count orders by status": countOrdersByStatus,
-    // "Find customers with no orders": customerWithNoOrders,
-    // "Total number of items ever ordered": totalNumbersOfItemsOrdered,
-    // "List all customers in a specific tier": getByTier("enterprise"),
-    // "Find all cancelled orders": AllCancelledOrders,
+    // "Q16 — Orders with payment failed but not cancelled": getOrdersWithPaymentFailedButNotCancelled(),
+    // "Q14 — Top 5 customers by total spend": getTop5CustomerByTotalSpend(),
+    // "Q13 — Total revenue per region (with discount)": getTotalRevenuePerRegion(),
+    // "Q12 — Customers who left at least one review": customerListWithAtLeastOneReview,
+    // "Q11 — Average number of items per order": averageNumberOfItemsPerOrder,
+    // "Q10 — List payment methods used and how many times": paymentMethodCounts,
+    // "Q9 — All orders placed in a specific month": getOrdersByMonth(2025, 4),
+    // "Q8 — Count reviews per product": countReviewsPerProduct,
+    // "Q7 — Find all cancelled orders": AllCancelledOrders,
+    // "Q6 —  List all customers in a specific tier": getByTier("enterprise"),
+    // "Q5 — Total number of items ever ordered": totalNumbersOfItemsOrdered,
+    // "Q4 — Find customers with no orders": customerWithNoOrders,
+    // "Q3 — Count orders by status": countOrdersByStatus,
+    // "Q2 — List all unique product categories": listOfUniqueProductsCategories,
+    // "Q1 — Count total customers per region": countTotalPerRegion,
   };
 }
 
