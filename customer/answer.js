@@ -190,7 +190,36 @@ function answer(data) {
         })),
     );
   };
+
+  // Q17 — Average rating per product (min 2 reviews)
+  const getAverageRatingPerProduct = () => {
+    productReviews = data.flatMap((c) => c.reviews);
+
+    const grouped = Object.groupBy(
+      productReviews,
+      ({ productId }) => productId,
+    );
+
+    return Object.entries(grouped)
+      .map(([productId, reviews]) => {
+        const total = reviews.reduce((sum, r) => sum + r.rating, 0);
+        const count = reviews.length;
+
+        return {
+          productId,
+          avgRating: Math.round(total / count),
+          reviewCount: count,
+        };
+      })
+      .filter((i) => i.reviewCount >= 2);
+  };
+
+  // Q18 — Orders with mixed item statuses
+  const getOrdersWithMixedItemStatues = () => {};
+
   return {
+    "Q18 — Orders with mixed item statuses": getOrdersWithMixedItemStatues(),
+    // "Q17 — Average rating per product (min 2 reviews)": getAverageRatingPerProduct(),
     // "Q16 — Orders with payment failed but not cancelled": getOrdersWithPaymentFailedButNotCancelled(),
     // "Q14 — Top 5 customers by total spend": getTop5CustomerByTotalSpend(),
     // "Q13 — Total revenue per region (with discount)": getTotalRevenuePerRegion(),
