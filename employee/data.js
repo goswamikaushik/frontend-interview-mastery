@@ -1236,3 +1236,5 @@ const employees = [
     joinedAs: "Director",
   },
 ];
+
+module.exports = employees;
