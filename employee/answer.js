@@ -42,7 +42,25 @@ function answer(data) {
       }));
   };
 
+  // Q6 — Total Salary Bill (Base + Bonus)
+  const totalSalaryBill = data.reduce(
+    (sum, { salary }) => sum + salary.base + (salary.bonus ?? 0),
+    0,
+  );
+
+  // Q7 — Find the Youngest and Oldest Employee
+  const findTheYoungAndOldEmp = data.reduce((acc, { id, name, age }) => {
+    console.log(age);
+    if (!acc.youngest || age < acc.youngest.age)
+      acc.youngest = { id, name, age };
+    if (!acc.oldest || age > acc.oldest.age) acc.oldest = { id, name, age };
+
+    return acc;
+  }, {});
+
   return {
+    // "Q7 — Find the Youngest and Oldest Employee": findTheYoungAndOldEmp,
+    // "Q6 — Total Salary Bill (Base + Bonus)": totalSalaryBill,
     // "Q5 — Get Employees on Leave or Inactive": getEmployeeByStatus([
     //   "on_leave",
     //   "inactive",
