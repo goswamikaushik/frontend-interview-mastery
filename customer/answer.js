@@ -214,11 +214,7 @@ function answer(data) {
       .filter((i) => i.reviewCount >= 2);
   };
 
-  // Q18 — Orders with mixed item statuses
-  const getOrdersWithMixedItemStatues = () => {};
-
   return {
-    "Q18 — Orders with mixed item statuses": getOrdersWithMixedItemStatues(),
     // "Q17 — Average rating per product (min 2 reviews)": getAverageRatingPerProduct(),
     // "Q16 — Orders with payment failed but not cancelled": getOrdersWithPaymentFailedButNotCancelled(),
     // "Q14 — Top 5 customers by total spend": getTop5CustomerByTotalSpend(),
