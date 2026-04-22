@@ -1830,3 +1830,4 @@ const students = [
     teacherRemarks: "Average, needs to push harder in Maths and BST",
   },
 ];
+module.exports = students;
