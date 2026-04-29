@@ -88,7 +88,11 @@ function answer(data) {
     [],
   );
 
+  const uniqueSubjectAcrossSchools = [
+    ...new Set(data.flatMap((stu) => stu.subjects.map((sub) => sub.name))),
+  ];
   return {
+    // "Q13 — Get All Unique Subjects Across the School":uniqueSubjectAcrossSchools,
     // "Q12 — Find the Student With the Highest Behavior Score":listStudentsOfHighestBehavior,
     // "Q11 — Check if ALL Scholarship Holders Passed Every Subject": isAllScholarshipHolderIsPassedInAllSubject,
     // "Q10 — Find Students With No Extracurricular Activities": findStudentsWithNoExtraCurricularActivities,
