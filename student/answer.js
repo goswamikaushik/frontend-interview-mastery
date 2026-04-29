@@ -78,7 +78,18 @@ function answer(data) {
     .filter((stu) => stu.scholarshipHolder)
     .every((stu) => stu.subjects.every((sub) => sub.isPassed));
 
+  const listStudentsOfHighestBehavior = data.reduce(
+    (acc, { id, name, behaviorScore }) => {
+      if (behaviorScore === 10) {
+        acc.push({ id, name, behaviorScore });
+      }
+      return acc;
+    },
+    [],
+  );
+
   return {
+    // "Q12 — Find the Student With the Highest Behavior Score":listStudentsOfHighestBehavior,
     // "Q11 — Check if ALL Scholarship Holders Passed Every Subject": isAllScholarshipHolderIsPassedInAllSubject,
     // "Q10 — Find Students With No Extracurricular Activities": findStudentsWithNoExtraCurricularActivities,
     // "Q9 — Count Students Per Category (Science / Commerce / Arts)": studentsPerCategory,
