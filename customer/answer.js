@@ -234,4 +234,4 @@ function answer(data) {
   };
 }
 
-console.log(answer(data));
+console.dir(answer(data), { depth: null });

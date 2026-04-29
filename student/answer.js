@@ -93,4 +93,5 @@ function answer(data) {
     // "Q1 — Get All Student Names": studentNames,
   };
 }
-console.log(answer(data));
+
+console.dir(answer(data), { depth: null });

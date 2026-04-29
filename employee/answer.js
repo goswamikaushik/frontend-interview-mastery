@@ -72,4 +72,5 @@ function answer(data) {
     // "Q1 — Get All Employee Names": employeeNames,
   };
 }
-console.log(answer(data));
+
+console.dir(answer(data), { depth: null });
