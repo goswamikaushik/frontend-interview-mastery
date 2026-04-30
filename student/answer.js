@@ -114,7 +114,22 @@ function answer(data) {
       attendancePercentage: attendance.percentage,
     }));
 
+  const getStudentReport = (studentId) => {
+    const stu = data.find((stu) => stu.id === studentId);
+
+    const subjectWiseMarks = stu.subjects.map(
+      ({ name, marks, grade, isPassed }) => ({
+        name,
+        marks,
+        grade,
+        passed: isPassed,
+      }),
+    );
+
+    return { name: stu.name, class: stu.class, subjects: subjectWiseMarks };
+  };
   return {
+    // "Q15 — Get Subject-wise Marks for a Given Student": getStudentReport("STU001"),
     // "Q14(A2) — Find Students With Attendance Below 75%":studentWith75PercentAttendanceA2,
     // "Q14(A1) — Find Students With Attendance Below 75%":studentWith75PercentAttendanceA1,
     // "Q13 — Get All Unique Subjects Across the School":uniqueSubjectAcrossSchools,
