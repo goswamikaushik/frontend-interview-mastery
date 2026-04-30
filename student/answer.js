@@ -91,7 +91,32 @@ function answer(data) {
   const uniqueSubjectAcrossSchools = [
     ...new Set(data.flatMap((stu) => stu.subjects.map((sub) => sub.name))),
   ];
+
+  const studentWith75PercentAttendanceA1 = data.reduce(
+    (acc, { name, attendance, standard }) => {
+      if (attendance.percentage < 75) {
+        acc.push({
+          name,
+          standard,
+          attendancePercentage: attendance.percentage,
+        });
+      }
+      return acc;
+    },
+    [],
+  );
+
+  const studentWith75PercentAttendanceA2 = data
+    .filter((stu) => stu.attendance.percentage < 75)
+    .map(({ name, attendance, standard }) => ({
+      name,
+      standard,
+      attendancePercentage: attendance.percentage,
+    }));
+
   return {
+    // "Q14(A2) — Find Students With Attendance Below 75%":studentWith75PercentAttendanceA2,
+    // "Q14(A1) — Find Students With Attendance Below 75%":studentWith75PercentAttendanceA1,
     // "Q13 — Get All Unique Subjects Across the School":uniqueSubjectAcrossSchools,
     // "Q12 — Find the Student With the Highest Behavior Score":listStudentsOfHighestBehavior,
     // "Q11 — Check if ALL Scholarship Holders Passed Every Subject": isAllScholarshipHolderIsPassedInAllSubject,
