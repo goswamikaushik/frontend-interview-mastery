@@ -88,7 +88,30 @@ function answer(data) {
       return acc;
     }, []);
 
+  // Q10 — Sort Employees by Base Salary (Descending)
+  const sortedEmpByBaseSalary = [...data]
+    .sort((a, b) => b.salary.base - a.salary.base)
+    .map((emp) => ({
+      name: emp.name,
+      base: emp.salary.base,
+      department: emp.department,
+    }));
+
+  // Q11 — Check if Any Engineer Knows GraphQL
+  const isAnyEngineerKnows = (skill) =>
+    data.some(
+      (emp) => emp.department === "Engineering" && emp.skills?.includes(skill),
+    );
+
+  // Q12 — Check if ALL Directors Are Active
+  const isAllDirectorAreActive = data.every(
+    (emp) => emp.role !== "Director" || emp.status === "active",
+  );
+
   return {
+    "Q12 — Check if ALL Directors Are Active": isAllDirectorAreActive,
+    // "Q11 — Check if Any Engineer Knows GraphQL": isAnyEngineerKnows("GraphQL"),
+    // "Q10 — Sort Employees by Base Salary (Descending)": sortedEmpByBaseSalary,
     // "Q9 — Get All Employees in a Given Region": getEmpByRegion("West"),
     // "Q8(A2) — List Employees With No Certifications": ListEmpNoCertificateA2,
     // "Q8(A1) — List Employees With No Certifications": ListEmpNoCertificateA1,
