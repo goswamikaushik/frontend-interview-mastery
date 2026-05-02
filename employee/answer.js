@@ -143,7 +143,14 @@ function answer(data) {
       .values(),
   );
 
+  // Q15 — Get Leave Balance for Each Employee
+  const empLeaveBalance = data.map(({ leaves, name }) => ({
+    name,
+    leaveBalance: leaves.total - leaves.used,
+  }));
+
   return {
+    // "Q15 — Get Leave Balance for Each Employee": empLeaveBalance,
     // "Q14 — Find All Projects Across the Company (No Duplicates)": allUniqueProject,
     // "Q13 — Get Average Performance Rating by Department": getAveragePerformanceRatingByDep(),
     // "Q12 — Check if ALL Directors Are Active": isAllDirectorAreActive,
