@@ -73,7 +73,23 @@ function answer(data) {
 
     return acc;
   }, []);
+
+  // Q9 — Get All Employees in a Given Region ( we can also use map + filter combination)
+  const getEmpByRegion = (region) =>
+    data.reduce((acc, curr) => {
+      if (curr.region.toLowerCase() === region.toLowerCase()) {
+        acc.push({
+          name: curr.name,
+          title: curr.title,
+          city: curr.location.city,
+        });
+      }
+
+      return acc;
+    }, []);
+
   return {
+    // "Q9 — Get All Employees in a Given Region": getEmpByRegion("West"),
     // "Q8(A2) — List Employees With No Certifications": ListEmpNoCertificateA2,
     // "Q8(A1) — List Employees With No Certifications": ListEmpNoCertificateA1,
     // "Q7 — Find the Youngest and Oldest Employee": findTheYoungAndOldEmp,
