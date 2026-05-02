@@ -108,8 +108,31 @@ function answer(data) {
     (emp) => emp.role !== "Director" || emp.status === "active",
   );
 
+  // Q13 — Get Average Performance Rating by Department
+  const getAveragePerformanceRatingByDep = () => {
+    const depWithRatingAndCount = data.reduce((acc, curr) => {
+      const dept = curr.department;
+      const rating = curr.performance?.rating ?? 0;
+
+      if (acc[dept]) {
+        acc[dept].ratingSum += rating;
+        acc[dept].count += 1;
+      } else {
+        acc[dept] = { ratingSum: rating, count: 1 };
+      }
+      return acc;
+    }, {});
+
+    return Object.fromEntries(
+      Object.entries(depWithRatingAndCount).map(
+        ([dep, { ratingSum, count }]) => [dep, +(ratingSum / count).toFixed(2)],
+      ),
+    );
+  };
   return {
-    "Q12 — Check if ALL Directors Are Active": isAllDirectorAreActive,
+    "Q13 — Get Average Performance Rating by Department":
+      getAveragePerformanceRatingByDep(),
+    // "Q12 — Check if ALL Directors Are Active": isAllDirectorAreActive,
     // "Q11 — Check if Any Engineer Knows GraphQL": isAnyEngineerKnows("GraphQL"),
     // "Q10 — Sort Employees by Base Salary (Descending)": sortedEmpByBaseSalary,
     // "Q9 — Get All Employees in a Given Region": getEmpByRegion("West"),
