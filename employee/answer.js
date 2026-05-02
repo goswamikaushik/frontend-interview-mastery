@@ -50,7 +50,6 @@ function answer(data) {
 
   // Q7 — Find the Youngest and Oldest Employee
   const findTheYoungAndOldEmp = data.reduce((acc, { id, name, age }) => {
-    console.log(age);
     if (!acc.youngest || age < acc.youngest.age)
       acc.youngest = { id, name, age };
     if (!acc.oldest || age > acc.oldest.age) acc.oldest = { id, name, age };
@@ -58,7 +57,25 @@ function answer(data) {
     return acc;
   }, {});
 
+  // Q8(A1) — List Employees With No Certifications
+  const ListEmpNoCertificateA1 = data
+    .filter(
+      (emp) =>
+        !Array.isArray(emp.certifications) || emp.certifications.length === 0,
+    )
+    .map((emp) => emp.name);
+
+  // Q8(A2) — List Employees With No Certifications
+  const ListEmpNoCertificateA2 = data.reduce((acc, curr) => {
+    if (!curr.certifications?.length) {
+      acc.push(curr.name);
+    }
+
+    return acc;
+  }, []);
   return {
+    // "Q8(A2) — List Employees With No Certifications": ListEmpNoCertificateA2,
+    // "Q8(A1) — List Employees With No Certifications": ListEmpNoCertificateA1,
     // "Q7 — Find the Youngest and Oldest Employee": findTheYoungAndOldEmp,
     // "Q6 — Total Salary Bill (Base + Bonus)": totalSalaryBill,
     // "Q5 — Get Employees on Leave or Inactive": getEmployeeByStatus([
