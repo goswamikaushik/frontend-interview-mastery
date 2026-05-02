@@ -129,9 +129,23 @@ function answer(data) {
       ),
     );
   };
+
+  // Q14 — Find All Projects Across the Company (No Duplicates)
+  const allUniqueProject = Array.from(
+    data
+      .flatMap((emp) => emp.projects)
+      .reduce((acc, { id, name, status }) => {
+        if (!acc.has(id)) {
+          acc.set(id, { id, status, name });
+        }
+        return acc;
+      }, new Map())
+      .values(),
+  );
+
   return {
-    "Q13 — Get Average Performance Rating by Department":
-      getAveragePerformanceRatingByDep(),
+    // "Q14 — Find All Projects Across the Company (No Duplicates)": allUniqueProject,
+    // "Q13 — Get Average Performance Rating by Department": getAveragePerformanceRatingByDep(),
     // "Q12 — Check if ALL Directors Are Active": isAllDirectorAreActive,
     // "Q11 — Check if Any Engineer Knows GraphQL": isAnyEngineerKnows("GraphQL"),
     // "Q10 — Sort Employees by Base Salary (Descending)": sortedEmpByBaseSalary,
