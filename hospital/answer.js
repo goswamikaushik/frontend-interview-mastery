@@ -29,17 +29,34 @@ function answer(data) {
     return acc;
   }, {});
 
+  // Q6 — List all unique diagnoses
+  const listAllUniqueDiagnoses = [
+    ...new Set(data.flatMap((p) => p.admissions.map((a) => a.diagnosis))),
+  ];
+
+  // Q7 — Patients who have insurance
+  const patientsWhoHaveInsurance = data.filter(
+    (p) => p.insuranceCovered,
+  ).length;
+
+  // Q8 — Average age of all patients
+  const totalAge = data.reduce((sum, { age }) => sum + age, 0);
+  const averageAgeOfAllPatients = Number((totalAge / data.length).toFixed(1));
+
+  // Q9 — Patients with critical admissions
+  const patientWithCriticalAdmissions = data;
+
   return {
-    // Q6 — List all unique diagnoses
-    // Q7 — Patients who have insurance
-    // Q8 — Average age of all patients
-    // Q9 — Patients with critical admissions
+    "Q9 — Patients with critical admissions": patientWithCriticalAdmissions,
     // Q10 — Total number of tests conducted
     // Q11 — Patients who left reviews
     // Q12 — Most common insurance provider
     // Q13 — Patients above age 60
     // Q14 — All departments used across all admissions
     // Q15 — Patients who paid out-of-pocket (no insurance)};
+    // "Q8 — Average age of all patients": averageAgeOfAllPatients,
+    // "Q7 — Patients who have insurance": patientsWhoHaveInsurance,
+    // "Q6 — List all unique diagnoses": listAllUniqueDiagnoses,
     // "Q5 — Patients from each hospital": patientFormEachHospital,
     // "Q4 — Patients grouped by blood group": patientsGroupedByBloodGroup,
     // "Q3 — All unique hospitals": allUniqueHospital,
