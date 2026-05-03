@@ -44,10 +44,18 @@ function answer(data) {
   const averageAgeOfAllPatients = Number((totalAge / data.length).toFixed(1));
 
   // Q9 — Patients with critical admissions
-  const patientWithCriticalAdmissions = data;
+  const patientsWithCriticalAdmissions = data.reduce(
+    (acc, { patientId, name, admissions }) => {
+      if (admissions.some(({ severity }) => severity === "critical")) {
+        acc.push({ patientId, name });
+      }
+      return acc;
+    },
+    [],
+  );
 
   return {
-    "Q9 — Patients with critical admissions": patientWithCriticalAdmissions,
+    "Q9 — Patients with critical admissions": patientsWithCriticalAdmissions,
     // Q10 — Total number of tests conducted
     // Q11 — Patients who left reviews
     // Q12 — Most common insurance provider
