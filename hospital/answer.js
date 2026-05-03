@@ -54,14 +54,37 @@ function answer(data) {
     [],
   );
 
+  // Q10 — Total number of tests conducted
+  const countOfTestsConducted = data.flatMap(({ admissions = [] }) =>
+    admissions.flatMap(({ tests = [] }) => tests),
+  ).length;
+
+  // Q11 — Patients who left reviews
+  const patientsWithReviewsCount = data.reduce(
+    (acc, { reviews }) => acc + ((reviews ?? []).length ? 1 : 0),
+    0,
+  );
+
+  // Q12 — Most common insurance provider
+  const providerFrequency = data.reduce((acc, { insuranceProvider }) => {
+    if (!insuranceProvider) return acc;
+    acc[insuranceProvider] = (acc[insuranceProvider] ?? 0) + 1;
+    return acc;
+  }, {});
+
+  const mostCommonInsuranceProvider = Object.entries(providerFrequency).reduce(
+    (max, [provider, count]) => (count > max.count ? { provider, count } : max),
+    { provider: null, count: 0 },
+  ).provider;
+
   return {
-    "Q9 — Patients with critical admissions": patientsWithCriticalAdmissions,
-    // Q10 — Total number of tests conducted
-    // Q11 — Patients who left reviews
-    // Q12 — Most common insurance provider
+    "Q12 — Most common insurance provider": mostCommonInsuranceProvider,
     // Q13 — Patients above age 60
     // Q14 — All departments used across all admissions
     // Q15 — Patients who paid out-of-pocket (no insurance)};
+    // "Q11 — Patients who left reviews": patientsWithReviewsCount,
+    // "Q10 — Total number of tests conducted": countOfTestsConducted,
+    // "Q9 — Patients with critical admissions": patientsWithCriticalAdmissions,
     // "Q8 — Average age of all patients": averageAgeOfAllPatients,
     // "Q7 — Patients who have insurance": patientsWhoHaveInsurance,
     // "Q6 — List all unique diagnoses": listAllUniqueDiagnoses,
@@ -72,4 +95,5 @@ function answer(data) {
     // "Q1 — Total number of patients": totalPatients,
   };
 }
+
 console.dir(answer(d), { depth: null });
