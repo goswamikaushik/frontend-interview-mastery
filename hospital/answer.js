@@ -77,11 +77,38 @@ function answer(data) {
     { provider: null, count: 0 },
   ).provider;
 
+  // Q13 — Patients above age 60
+  const patientsAbove60 = data
+    .filter((p) => p.age > 60)
+    .map(({ patientId, name, age }) => ({
+      patientId,
+      name,
+      age,
+    }))
+    .sort((a, b) => b.age - a.age);
+
+  // Q14 — All departments used across all admissions
+  const uniqueDepartments = [
+    ...new Set(data.flatMap((p) => p.admissions.map((a) => a.department))),
+  ].sort();
+
+  // Q15 — Patients who paid out-of-pocket (no insurance)
+  const patientsWithoutInsurance = data.reduce(
+    (acc, { insuranceCovered, name, patientId, city }) => {
+      if (!insuranceCovered) {
+        acc.push({ name, insuranceCovered, patientId, city });
+      }
+      return acc;
+    },
+    [],
+  );
+
   return {
-    "Q12 — Most common insurance provider": mostCommonInsuranceProvider,
-    // Q13 — Patients above age 60
-    // Q14 — All departments used across all admissions
-    // Q15 — Patients who paid out-of-pocket (no insurance)};
+    "Q15 — Patients who paid out-of-pocket (no insurance)":
+      patientsWithoutInsurance,
+    // "Q14 — All departments used across all admissions": uniqueDepartments,
+    // "Q13 — Patients above age 60": patientsAbove60,
+    // "Q12 — Most common insurance provider": mostCommonInsuranceProvider,
     // "Q11 — Patients who left reviews": patientsWithReviewsCount,
     // "Q10 — Total number of tests conducted": countOfTestsConducted,
     // "Q9 — Patients with critical admissions": patientsWithCriticalAdmissions,
