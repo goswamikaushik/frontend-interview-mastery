@@ -7,7 +7,7 @@
  * ============================================================
  */
 
-export const hospitalData = [
+const hospitalData = [
   // ─────────────────────────────────────────────
   // HOSPITAL 1 — City General Hospital (Mumbai)
   // ─────────────────────────────────────────────
@@ -1237,7 +1237,7 @@ export const hospitalData = [
 ];
 
 // ─── DOCTORS REFERENCE TABLE ────────────────────────────────
-export const doctors = [
+const doctors = [
   {
     doctorId: "DR001",
     name: "Dr. Suresh Malhotra",
@@ -1335,3 +1335,5 @@ export const doctors = [
     consultationFee: 950,
   },
 ];
+
+module.exports = hospitalData;
