@@ -17,15 +17,19 @@ function answer(data) {
   // Q3 — All unique hospitals
   const allUniqueHospital = [...new Set(data.map((p) => p.hospital))].sort();
 
-  // Task: Return a sorted array of unique hospital names.
-  // Constraints: No duplicates, alphabetical order.
-  // Expected output:
+  // Q4 — Patients grouped by blood group
+  const patientsGroupedByBloodGroup = data.reduce((acc, { bloodGroup }) => {
+    acc[bloodGroup] = (acc[bloodGroup] ?? 0) + 1;
+    return acc;
+  }, {});
 
-  // ["Apollo Medical Centre", "City General Hospital", "Sunrise Health Institute"];
+  // Q5 — Patients from each hospital
+  const patientFormEachHospital = data.reduce((acc, { hospital }) => {
+    acc[hospital] = (acc[hospital] ?? 0) + 1;
+    return acc;
+  }, {});
 
   return {
-    // Q4 — Patients grouped by blood group
-    // Q5 — Patients from each hospital
     // Q6 — List all unique diagnoses
     // Q7 — Patients who have insurance
     // Q8 — Average age of all patients
@@ -36,6 +40,8 @@ function answer(data) {
     // Q13 — Patients above age 60
     // Q14 — All departments used across all admissions
     // Q15 — Patients who paid out-of-pocket (no insurance)};
+    // "Q5 — Patients from each hospital": patientFormEachHospital,
+    // "Q4 — Patients grouped by blood group": patientsGroupedByBloodGroup,
     // "Q3 — All unique hospitals": allUniqueHospital,
     // "Q2 — Patients with no admissions": patientWithNoAdmissions,
     // "Q1 — Total number of patients": totalPatients,
