@@ -104,8 +104,7 @@ function answer(data) {
   );
 
   return {
-    "Q15 — Patients who paid out-of-pocket (no insurance)":
-      patientsWithoutInsurance,
+    // "Q15 — Patients who paid out-of-pocket (no insurance)": patientsWithoutInsurance,
     // "Q14 — All departments used across all admissions": uniqueDepartments,
     // "Q13 — Patients above age 60": patientsAbove60,
     // "Q12 — Most common insurance provider": mostCommonInsuranceProvider,

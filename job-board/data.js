@@ -7,7 +7,7 @@
  * ============================================================
  */
 
-export const companies = [
+const companies = [
   {
     companyId: "C001",
     name: "TechNova Solutions",
@@ -915,3 +915,5 @@ export const companies = [
     ],
   },
 ];
+
+module.exports = companies;
