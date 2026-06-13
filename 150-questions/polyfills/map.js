@@ -1,186 +1,165 @@
-Array.prototype.myMap = function (callback) {
-  if (typeof callback !== "function") {
-    throw new TypeError(`${callback} is not a function`);
-  }
+function testMyMap() {
+  Array.prototype.myMap = function (callback) {
+    if (typeof callback !== "function") {
+      throw new TypeError(`${callback} is not a function`);
+    }
 
-  const result = [];
+    const result = [];
 
-  for (let i = 0; i < this.length; i++) {
-    result.push(callback(this[i], i, this));
-  }
+    for (let i = 0; i < this.length; i++) {
+      result.push(callback(this[i], i, this));
+    }
 
-  return result;
-};
+    return result;
+  };
 
-// ================================
-// TEST 1: Double Numbers
-// Expected: [2, 4, 6, 8, 10]
-// ================================
-console.log([1, 2, 3, 4, 5].myMap((n) => n * 2));
+  return {
+    TEST_1: {
+      title: "Double Numbers",
+      expected: [2, 4, 6, 8, 10],
+      actual: [1, 2, 3, 4, 5].myMap((n) => n * 2),
+    },
 
-// ================================
-// TEST 2: Square Numbers
-// Expected: [1, 4, 9, 16, 25]
-// ================================
-console.log([1, 2, 3, 4, 5].myMap((n) => n * n));
+    TEST_2: {
+      title: "Square Numbers",
+      expected: [1, 4, 9, 16, 25],
+      actual: [1, 2, 3, 4, 5].myMap((n) => n * n),
+    },
 
-// ================================
-// TEST 3: Convert Numbers to Strings
-// Expected: ["1", "2", "3"]
-// ================================
-console.log([1, 2, 3].myMap((n) => String(n)));
+    TEST_3: {
+      title: "Convert Numbers to Strings",
+      expected: ["1", "2", "3"],
+      actual: [1, 2, 3].myMap((n) => String(n)),
+    },
 
-// ================================
-// TEST 4: Access Index
-// Expected:
-// ["0:10", "1:20", "2:30"]
-// ================================
-console.log([10, 20, 30].myMap((value, index) => `${index}:${value}`));
+    TEST_4: {
+      title: "Access Index",
+      expected: ["0:10", "1:20", "2:30"],
+      actual: [10, 20, 30].myMap((value, index) => `${index}:${value}`),
+    },
 
-// ================================
-// TEST 5: Access Original Array
-// Expected:
-// [3, 3, 3]
-// ================================
-console.log([1, 2, 3].myMap((value, index, array) => array.length));
+    TEST_5: {
+      title: "Access Original Array",
+      expected: [3, 3, 3],
+      actual: [1, 2, 3].myMap((value, index, array) => array.length),
+    },
 
-// ================================
-// TEST 6: Empty Array
-// Expected: []
-// ================================
-console.log([].myMap((n) => n * 2));
+    TEST_6: {
+      title: "Empty Array",
+      expected: [],
+      actual: [].myMap((n) => n * 2),
+    },
 
-// ================================
-// TEST 7: Single Element
-// Expected: [100]
-// ================================
-console.log([50].myMap((n) => n * 2));
+    TEST_7: {
+      title: "Single Element",
+      expected: [100],
+      actual: [50].myMap((n) => n * 2),
+    },
 
-// ================================
-// TEST 8: Return Objects
-// Expected:
-// [
-//   { value: 1 },
-//   { value: 2 },
-//   { value: 3 }
-// ]
-// ================================
-console.log(
-  [1, 2, 3].myMap((n) => ({
-    value: n,
-  })),
-);
+    TEST_8: {
+      title: "Return Objects",
+      expected: [{ value: 1 }, { value: 2 }, { value: 3 }],
+      actual: [1, 2, 3].myMap((n) => ({
+        value: n,
+      })),
+    },
 
-// ================================
-// TEST 9: Array of Objects
-// Expected:
-// ["Kaushik", "John", "Jane"]
-// ================================
-console.log(
-  [{ name: "Kaushik" }, { name: "John" }, { name: "Jane" }].myMap(
-    (user) => user.name,
-  ),
-);
+    TEST_9: {
+      title: "Array Of Objects",
+      expected: ["Kaushik", "John", "Jane"],
+      actual: [{ name: "Kaushik" }, { name: "John" }, { name: "Jane" }].myMap(
+        (user) => user.name,
+      ),
+    },
 
-// ================================
-// TEST 10: Boolean Result
-// Expected:
-// [false, true, true]
-// ================================
-console.log([1, 2, 3].myMap((n) => n > 1));
+    TEST_10: {
+      title: "Boolean Result",
+      expected: [false, true, true],
+      actual: [1, 2, 3].myMap((n) => n > 1),
+    },
 
-// ================================
-// TEST 11: Callback Parameters Check
-// Expected:
-// value=10 index=0
-// value=20 index=1
-// value=30 index=2
-// Result:
-// [20, 40, 60]
-// ================================
-console.log(
-  [10, 20, 30].myMap((value, index, array) => {
-    console.log(`value=${value} index=${index}`);
+    TEST_11: {
+      title: "Callback Parameters",
+      expected: [20, 40, 60],
+      actual: [10, 20, 30].myMap((value) => value * 2),
+    },
 
-    return value * 2;
-  }),
-);
+    TEST_12: {
+      title: "Preserve Original Array",
+      expected: {
+        original: [1, 2, 3],
+        mapped: [2, 4, 6],
+      },
+      actual: (() => {
+        const original = [1, 2, 3];
 
-// ================================
-// TEST 12: Preserve Original Array
-// Expected:
-// original -> [1, 2, 3]
-// mapped -> [2, 4, 6]
-// ================================
-const original = [1, 2, 3];
+        return {
+          original,
+          mapped: original.myMap((n) => n * 2),
+        };
+      })(),
+    },
 
-const mapped = original.myMap((n) => n * 2);
+    TEST_13: {
+      title: "Nested Arrays",
+      expected: [2, 3, 1],
+      actual: [[1, 2], [3, 4, 5], [6]].myMap((arr) => arr.length),
+    },
 
-console.log("original", original);
-console.log("mapped", mapped);
+    TEST_14: {
+      title: "Return Undefined",
+      expected: [undefined, undefined, undefined],
+      actual: [1, 2, 3].myMap(() => undefined),
+    },
 
-// ================================
-// TEST 13: Nested Arrays
-// Expected:
-// [2, 3, 1]
-// ================================
-console.log([[1, 2], [3, 4, 5], [6]].myMap((arr) => arr.length));
+    TEST_15: {
+      title: "Return Null",
+      expected: [null, null, null],
+      actual: [1, 2, 3].myMap(() => null),
+    },
 
-// ================================
-// TEST 14: Return Undefined
-// Expected:
-// [undefined, undefined, undefined]
-// ================================
-console.log([1, 2, 3].myMap(() => undefined));
+    TEST_16: {
+      title: "Return Array",
+      expected: [[1], [2], [3]],
+      actual: [1, 2, 3].myMap((n) => [n]),
+    },
 
-// ================================
-// TEST 15: Return Null
-// Expected:
-// [null, null, null]
-// ================================
-console.log([1, 2, 3].myMap(() => null));
+    TEST_17: {
+      title: "Invalid Callback",
+      expected: "TypeError",
+      actual: (() => {
+        try {
+          return [1, 2, 3].myMap("hello");
+        } catch (err) {
+          return err.name;
+        }
+      })(),
+    },
 
-// ================================
-// TEST 16: Return Array
-// Expected:
-// [[1], [2], [3]]
-// ================================
-console.log([1, 2, 3].myMap((n) => [n]));
+    TEST_18: {
+      title: "Different Return Types",
+      expected: [1, "2", true],
+      actual: [1, 2, 3].myMap((n) => {
+        if (n === 1) return 1;
+        if (n === 2) return "2";
+        return true;
+      }),
+    },
 
-// ================================
-// TEST 17: Invalid Callback
-// Expected:
-// TypeError: hello is not a function
-// ================================
-try {
-  console.log([1, 2, 3].myMap("hello"));
-} catch (err) {
-  console.log(err.message);
+    TEST_19: {
+      title: "Verify Length",
+      expected: 5,
+      actual: [1, 2, 3, 4, 5].myMap((n) => n * 2).length,
+    },
+
+    TEST_20: {
+      title: "Math.floor",
+      expected: [1, 2, 3],
+      actual: [1.2, 2.5, 3.9].myMap(Math.floor),
+    },
+  };
 }
 
-// ================================
-// TEST 18: Callback Returns Different Types
-// Expected:
-// [1, "2", true]
-// ================================
-console.log(
-  [1, 2, 3].myMap((n) => {
-    if (n === 1) return 1;
-    if (n === 2) return "2";
-    return true;
-  }),
-);
-
-// ================================
-// TEST 19: Verify Length
-// Expected:
-// 5
-// ================================
-console.log([1, 2, 3, 4, 5].myMap((n) => n * 2).length);
-
-// ================================
-// TEST 20: Map With Math Object
-// Expected:
-// [1, 2, 3]
-// ================================
-console.log([1.2, 2.5, 3.9].myMap(Math.floor));
+console.dir(testMyMap(), {
+  depth: null,
+});
