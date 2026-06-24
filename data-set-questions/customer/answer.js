@@ -189,7 +189,7 @@ function answer(data) {
 
   // Q17 — Average rating per product (min 2 reviews)
   const getAverageRatingPerProduct = () => {
-    productReviews = data.flatMap((c) => c.reviews);
+    const productReviews = data.flatMap((c) => c.reviews);
 
     const grouped = Object.groupBy(
       productReviews,
@@ -210,7 +210,22 @@ function answer(data) {
       .filter((i) => i.reviewCount >= 2);
   };
 
+  // Q18 — Orders with mixed item statuses
+  function getOrdersWithMixedItemStatuses() {
+    return data.flatMap((c) =>
+      c.orders
+        .filter((o) => new Set(o.items.map((i) => i.itemStatus)).size > 1)
+        .map((o) => ({
+          orderId: o.orderId,
+          customerId: c.customerId,
+          itemStatuses: [...new Set(o.items.map((i) => i.itemStatus))],
+        })),
+    );
+  }
+
   return {
+    "Q18 — Orders with mixed item statusesQ18 — Orders with mixed item statuses":
+      getOrdersWithMixedItemStatuses(),
     // "Q17 — Average rating per product (min 2 reviews)": getAverageRatingPerProduct(),
     // "Q16 — Orders with payment failed but not cancelled": getOrdersWithPaymentFailedButNotCancelled(),
     // "Q14 — Top 5 customers by total spend": getTop5CustomerByTotalSpend(),
