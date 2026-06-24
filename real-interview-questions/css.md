@@ -47,6 +47,9 @@
 
 9. **What is the difference between `display: none` and `visibility: hidden`?**
 
+10. **How to create 5 divs in a row without flex/grid?**
+    - _Also asked as:_ Using `display: inline-block` for layout.
+
 ---
 
 ## 🔹 Reflow & Repaint
@@ -97,6 +100,9 @@
 ## 🔹 Handling Overflow
 
 14. **Handling overflow and layout breaking issues.**
+
+15. **How do you optimize CSS delivery?**
+    - _Also asked as:_ What is the difference between class and id in CSS?
 
 ---
 

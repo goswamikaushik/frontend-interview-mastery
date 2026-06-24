@@ -12,6 +12,13 @@
    - _Also asked as:_ Semantic HTML importance — give examples.
 
 2. **Why do we write `<!DOCTYPE html>` at the top of an HTML document?**
+   - _Also asked as:_ How does the doctype declaration affect a webpage?
+
+3. **What is the difference between `id` and `class` attributes?**
+
+4. **What are meta tags, and what purpose do they serve?**
+
+5. **How do `span` and `div` elements differ?**
 
 ---
 
@@ -39,6 +46,13 @@
    - _Also asked as:_ Explain the Critical Rendering Path.
 
 9. **What is the difference between `defer` and `async` in script tags?**
+
+10. **What is the Viewport Meta Tag? Why does your UI break on mobile without it?**
+
+11. **What are `noopener` and `noreferrer`? Why are they important in `<a target="_blank">`?**
+
+12. **What is `srcset` in HTML?**
+    - _Also asked as:_ How do you serve responsive images?
 
 ---
 

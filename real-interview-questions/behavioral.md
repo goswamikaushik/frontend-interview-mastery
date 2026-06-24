@@ -28,6 +28,11 @@
 
 8. **What factors would you consider while selecting team members?**
 
+9. **How do you mentor junior developers and review code?**
+
+10. **Tell me about a time you disagreed with product or design.**
+   - _Also asked as:_ How do you handle pushback from product/design teams?
+
 ---
 
 ## 🔹 Production Incidents
@@ -47,6 +52,14 @@
 13. **Tell me about a complex UI you built.**
 
 14. **What would you do differently if you rebuilt your project today?**
+
+15. **When did you rescue a failing feature?**
+    - _Also asked as:_ Tell me about a time you took ownership of something broken.
+
+16. **A real performance bug you fixed in production — root cause and approach.**
+
+17. **What would you change about [company's app] right now?**
+    - _Also asked as:_ Use the app for 15 minutes before the manager round and have one specific improvement ready.
 
 ---
 

@@ -43,6 +43,16 @@
 
 8. **How do you build accessibility-first UIs and meet WCAG requirements in real projects?**
 
+9. **How would you ensure that a form is accessible?**
+
+10. **How can you make images accessible?**
+
+11. **How would you create an accessible navigation menu?**
+
+12. **What is the difference between using `role="button"` and a `<button>` element?**
+
+13. **What are some common accessibility issues in web development?**
+
 ---
 
 ## 🔹 SEO & Accessibility

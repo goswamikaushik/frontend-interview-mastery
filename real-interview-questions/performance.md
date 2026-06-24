@@ -100,3 +100,15 @@
 21. **Source maps in production — pros and cons.**
 
 22. **How would you build frontend monitoring and logging for production issues?**
+
+23. **What are the advantages of using a Content Delivery Network (CDN)?**
+
+24. **How do service workers enhance web performance?**
+
+25. **How do you reduce Time to Interactive (TTI)?**
+
+26. **What are common memoization pitfalls?**
+    - _Also asked as:_ When should you NOT use useMemo?
+
+27. **How do you handle caching on a website? (Client-side + Server-side)**
+    - _Also asked as:_ What are frontend caching strategies?

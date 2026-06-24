@@ -1,6 +1,6 @@
 # 🧪 The Complete Frontend Interview Preparation Kit
 
-> **390+ coding problems + 500+ real interview questions** covering JavaScript, React, CSS, TypeScript, System Design, Performance, and more — everything you need to crack frontend interviews at top companies.
+> **390+ coding problems + 568+ real interview questions** covering JavaScript, React, CSS, TypeScript, System Design, Performance, and more — everything you need to crack frontend interviews at top companies.
 
 ---
 
@@ -80,25 +80,25 @@ frontend-interview-mastery/
 
 ## 📋 Real Interview Questions (From Actual Interviews)
 
-> **500+ unique questions** picked from real LinkedIn posts where developers shared their interview experiences at **IBM, EY, Deloitte, Intuit, Amazon, Coursera, fintech companies**, and more. Each question is unique — when the same question has been asked in multiple ways, alternate phrasings are shown as sub-bullets.
+> **568+ unique questions** picked from real LinkedIn posts where developers shared their interview experiences at **IBM, EY, Deloitte, Intuit, Amazon, Coursera, Cognizant, Nagarro, MakeMyTrip, Zomato, Zepto, fintech companies**, and more. Each question is unique — when the same question has been asked in multiple ways, alternate phrasings are shown as sub-bullets.
 
 ### Quick Navigation
 
 | #   | File                                                                         | Category                                                    | Questions |
 | --- | ---------------------------------------------------------------------------- | ----------------------------------------------------------- | :-------: |
-| 1   | [⚛️ react.md](./real-interview-questions/react.md)                           | React, Next.js, State Management, Hooks, Patterns           |    131    |
-| 2   | [🟡 javascript.md](./real-interview-questions/javascript.md)                 | JS Core, Closures, Event Loop, Prototypes, ES6+             |    107    |
-| 3   | [🔵 html.md](./real-interview-questions/html.md)                             | Semantic HTML, Forms, Accessibility, Browser Parsing        |    12     |
-| 4   | [🎨 css.md](./real-interview-questions/css.md)                               | Flexbox, Grid, Positioning, Animations, BEM, Design Systems |    22     |
+| 1   | [⚛️ react.md](./real-interview-questions/react.md)                           | React, Next.js, State Management, Hooks, Patterns           |    145    |
+| 2   | [🟡 javascript.md](./real-interview-questions/javascript.md)                 | JS Core, Closures, Event Loop, Prototypes, ES6+             |    115    |
+| 3   | [🔵 html.md](./real-interview-questions/html.md)                             | Semantic HTML, Forms, Accessibility, Browser Parsing        |    18     |
+| 4   | [🎨 css.md](./real-interview-questions/css.md)                               | Flexbox, Grid, Positioning, Animations, BEM, Design Systems |    24     |
 | 5   | [🟢 typescript.md](./real-interview-questions/typescript.md)                 | Generics, Utility Types, Type vs Interface                  |     7     |
-| 6   | [⚡ performance.md](./real-interview-questions/performance.md)               | Core Web Vitals, Optimization, Asset Loading, Monitoring    |    30     |
-| 7   | [♿ accessibility.md](./real-interview-questions/accessibility.md)           | WCAG, ARIA, Keyboard Navigation, Screen Readers             |     9     |
-| 8   | [🏗️ system-design.md](./real-interview-questions/system-design.md)           | Frontend System Design (Basic → Advanced)                   |    35     |
+| 6   | [⚡ performance.md](./real-interview-questions/performance.md)               | Core Web Vitals, Optimization, Asset Loading, Monitoring    |    27     |
+| 7   | [♿ accessibility.md](./real-interview-questions/accessibility.md)           | WCAG, ARIA, Keyboard Navigation, Screen Readers             |    14     |
+| 8   | [🏗️ system-design.md](./real-interview-questions/system-design.md)           | Frontend System Design (Basic → Advanced → Machine Coding)  |    51     |
 | 9   | [🛠️ build-tools-devops.md](./real-interview-questions/build-tools-devops.md) | Webpack, Vite, CI/CD, Monorepo, Babel                       |    25     |
 | 10  | [🔐 auth-security.md](./real-interview-questions/auth-security.md)           | REST, GraphQL, OAuth, JWT, XSS/CSRF, HIPAA                  |    31     |
 | 11  | [🔍 debugging-devtools.md](./real-interview-questions/debugging-devtools.md) | Chrome DevTools, React Profiler, Memory Leaks               |    16     |
-| 12  | [🧩 other.md](./real-interview-questions/other.md)                           | NestJS, Electron, WebSocket, AI Integration, DSA            |    60     |
-| 13  | [🧠 behavioral.md](./real-interview-questions/behavioral.md)                 | Leadership, Conflicts, Production Incidents, Career         |    21     |
+| 12  | [🧩 other.md](./real-interview-questions/other.md)                           | NestJS, Electron, WebSocket, AI, DSA, PWA, Git              |    70     |
+| 13  | [🧠 behavioral.md](./real-interview-questions/behavioral.md)                 | Leadership, Conflicts, Production Incidents, Career         |    25     |
 
 ### 🎯 Prep Priority (Recommended Order)
 

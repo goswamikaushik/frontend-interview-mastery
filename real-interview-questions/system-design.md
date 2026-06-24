@@ -98,3 +98,42 @@
 
 35. **Discuss the HLD of your current or past frontend system or project.**
     - _Also asked as:_ Covering modules, component hierarchy, API contracts, caching, performance, and non-functional requirements.
+
+36. **Design a scalable e-commerce frontend handling high traffic during flash sales.**
+    - _Also asked as:_ Code splitting, client-side caching, state management architecture, API communication patterns.
+
+37. **Design a frontend architecture for a multi-tenant SaaS application.**
+
+38. **How would you design a frontend system serving millions of users daily?**
+
+39. **Design a feature flag system for a frontend application.**
+
+40. **Design a role-based access control (RBAC) system on the frontend.**
+
+---
+
+## 🔹 Machine Coding (System Design)
+
+41. **Build a Checkbox Tree component.**
+
+42. **Build a Nested Comments Feed.**
+
+43. **Build a Toast Notification system — variants, auto dismiss, queue, custom position.**
+    - _Also asked as:_ Extend it to work without re-rendering the entire app on every toast.
+    - _Also asked as:_ Allow programmatic dismiss using a ref.
+
+44. **Build an OTP input — 6 boxes, auto focus, paste support, backspace handling.**
+
+45. **Build a Star Rating component with half star support.**
+
+46. **Build a Type Ahead Search — debounced, cancellable, with keyboard navigation.**
+
+47. **Build a Stopwatch (Start, Stop, Reset + live timer).**
+
+48. **Build a Product Listing and Checkout system.**
+
+49. **Build a Search-Based Single Select Component with data from API.**
+
+50. **Build a Form-Based To-Do App with API data, validations, edit, update, delete.**
+
+51. **Build a Table with sorting and interactions.**

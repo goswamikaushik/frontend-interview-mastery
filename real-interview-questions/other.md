@@ -161,6 +161,9 @@
 53. **Service workers and offline-first concepts.**
     - _Also asked as:_ What is a PWA?
 
+54. **What are Progressive Web Apps (PWAs) and their benefits?**
+    - _Also asked as:_ How do PWAs differ from native apps?
+
 ---
 
 ## 🔹 DSA / Coding Round (Asked in Frontend Interviews)
@@ -184,3 +187,27 @@
 
 60. **What would you do differently if you rebuilt your project today?**
     - _Also asked as:_ "You said architected — draw the architecture on paper right now."
+
+61. **What is the difference between AI and Generative AI?**
+
+62. **What are LLMs and SLMs?**
+
+63. **How do you handle version control and collaboration using Git?**
+
+64. **Explain the difference between npm and yarn.**
+
+65. **Explain the concept of component-driven architecture.**
+
+---
+
+## 🔹 DSA (Advanced — Asked at Zepto, Zomato, MakeMyTrip)
+
+66. **Serialize & Deserialize Binary Tree.**
+
+67. **BST Operations.**
+
+68. **Two N-ary trees equality.**
+
+69. **Trapping Rain Water.**
+
+70. **First & Last Position in sorted array.**

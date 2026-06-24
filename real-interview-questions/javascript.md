@@ -21,6 +21,9 @@
 5. **What is Stack Memory and Heap Memory?**
    - _Also asked as:_ How does JavaScript store primitives and objects internally?
 
+6. **Primitive vs Reference Data Types — what's the difference?**
+   - _Also asked as:_ How are objects stored differently from primitives?
+
 ---
 
 ## 🔹 Closures & Scope
@@ -70,6 +73,9 @@
 16. **What is Currying? Explain with an example.**
 
 17. **What is Partial Application?**
+
+18. **What is the use of the `new` operator in JavaScript?**
+    - _Also asked as:_ What happens if you use `new` with an arrow function?
 
 ---
 
@@ -153,6 +159,7 @@
 
 36. **What is the difference between Shallow Copy and Deep Copy?**
     - _Also asked as:_ Object.assign vs spread operator.
+    - _Also asked as:_ How would you implement a deep clone without external libraries?
 
 ---
 
@@ -197,6 +204,8 @@
 49. **What is Optional Chaining?**
 
 50. **What is Nullish Coalescing?**
+
+51. **What is the difference between `null` and `undefined`?**
 
 ---
 
@@ -298,6 +307,18 @@
 
 76. **JSON — parsing and stringifying data.**
 
+77. **What happens when you type a URL in the browser and hit Enter?**
+    - _Also asked as:_ What is CRP (Critical Rendering Path)?
+    - _Also asked as:_ What events can we use when a website is loading?
+
+78. **What are render-blocking resources?**
+
+79. **What is the use of Headers in HTTP requests?**
+
+80. **What are ETag, Cache-Control, and Document Fragment?**
+
+81. **What is Prerender? How does it differ from Preload and Prefetch?**
+
 ---
 
 ## 🔹 Memory & Performance
@@ -312,11 +333,26 @@
 79. **Web Workers — basic idea and when to use.**
     - _Also asked as:_ Web Workers for heavy computation.
 
+80. **What are Streams, backpressure, and how do they relate to the event loop?**
+    - _Also asked as:_ Performance de-optimization — why deleting object properties can hurt performance.
+
+81. **What algorithm does Array.prototype.sort() use? What's the output of `[1, null, 5, 2, undefined]`?**
+
 ---
 
 ## 🔹 Design Patterns
 
 80. **JavaScript Design Patterns — Singleton, Observer, Module.**
+
+81. **How do we use OOP in JavaScript?**
+    - _Also asked as:_ What are the SOLID Principles in frontend?
+
+82. **Difference between Map and Object in JavaScript.**
+    - _Also asked as:_ When would you use a Map over a plain object?
+
+83. **Can you bind `this` in an arrow function? What happens if you use `new` with an arrow function?**
+
+84. **Difference between Prototypal and Classical Inheritance in JavaScript.**
 
 ---
 
@@ -372,3 +408,6 @@
 
 97. **What is the Rendering Queue in the Event Loop?**
     - _Also asked as:_ Call stack → Web APIs → Callback queue → Microtask queue → Rendering queue — explain the full flow.
+
+98. **How does the browser rendering pipeline work?**
+    - _Also asked as:_ HTML → CSS → Layout → Paint → Composite — explain each step.

@@ -79,6 +79,10 @@
 
 19. **Have you ever faced an infinite re-render issue? How did you fix it?**
 
+20. **What is useInsertionEffect? How does it differ from useEffect and useLayoutEffect?**
+
+21. **What are the rules of React Hooks? Why do they exist?**
+
 ---
 
 ## 🔹 Memoization & Performance
@@ -198,6 +202,11 @@
 53. **What is React Strict Mode? What does it do?**
     - _Also asked as:_ Why does React Strict Mode cause double renders?
 
+54. **What are React Fragments and why are they used?**
+
+55. **What are Synthetic Events in React?**
+    - _Also asked as:_ How does React handle events differently from native DOM events?
+
 ---
 
 ## 🔹 Forms & Data Handling
@@ -208,7 +217,10 @@
     - _Also asked as:_ How do you make API calls in React?
     - _Also asked as:_ Rendering items from API response.
 
-53. **How do you manage loading, error, and success states?**
+53. **Compare Axios and Fetch API in React applications.**
+    - _Also asked as:_ When would you use Axios over Fetch?
+
+54. **How do you manage loading, error, and success states?**
     - _Also asked as:_ How do you handle API errors and loading states?
 
 54. **API Caching, Retries & Background Sync — explain.**
@@ -260,6 +272,9 @@
 64. **Authentication implementation in React applications.**
     - _Also asked as:_ React authentication strategies.
     - _Also asked as:_ Role-Based Access Control (RBAC) in React.
+    - _Also asked as:_ How do you protect and manage role-based routes in React Router?
+
+65. **How would you auto-logout users after 30 minutes of inactivity?**
 
 ---
 
@@ -273,6 +288,10 @@
 
 67. **Writing basic unit tests for components.**
     - _Also asked as:_ Debugging React rendering issues.
+
+68. **How do you write unit tests using Jest and React Testing Library?**
+
+69. **Explain end-to-end testing using Cypress or Playwright.**
 
 ---
 
@@ -293,6 +312,8 @@
     - _Also asked as:_ How did you handle SEO?
 
 74. **How does Next.js Image component help performance?**
+
+75. **How do you fetch data in Next.js using getStaticProps and getServerSideProps?**
 
 75. **A Next.js page is loading slowly because it fetches data from multiple APIs. How would you optimize the page performance?**
 
@@ -333,6 +354,7 @@
 
 91. **Users report inconsistent UI issues across browsers — how do you troubleshoot?**
     - _Also asked as:_ How do you guarantee layout and behavior consistency across browsers and screen sizes?
+    - _Also asked as:_ How do you handle cross-browser quirks without breaking user experience?
 
 92. **A critical UI feature fails during peak traffic — what's your immediate mitigation strategy?**
 
@@ -366,6 +388,27 @@
 
 106. **Context API and its use cases.**
      - _Also asked as:_ What is Context API? How does it work?
+
+107. **How would you implement internationalization (i18n) in a React app?**
+    - _Also asked as:_ Your application must support multiple languages — how?
+
+108. **How would you implement smooth page transitions and animations in React?**
+
+109. **Your API calls frequently hit the rate limit — how would you implement throttling?**
+
+110. **If a user clicks a button multiple times to fetch data, how do you cancel old API calls and use only the latest result?**
+    - _Also asked as:_ How does AbortController work in JavaScript?
+
+111. **What is useOptimistic in React?**
+    - _Also asked as:_ How do you update UI instantly before API response?
+
+112. **What is useActionState in React?**
+    - _Also asked as:_ How do you manage async actions & form states?
+
+113. **What is the difference between Shadow DOM and Virtual DOM?**
+
+114. **Explain React class component lifecycle methods.**
+    - _Also asked as:_ componentDidMount, componentDidUpdate, shouldComponentUpdate, componentWillUnmount.
 
 ---
 
