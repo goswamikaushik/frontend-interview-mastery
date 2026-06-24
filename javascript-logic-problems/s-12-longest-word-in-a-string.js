@@ -19,6 +19,6 @@ function findLongestWordInSentence(str) {
 
   return longestWord;
 }
-console.log(findLongestWordInSentence("The quick brown fox jumped")); // "jumped"
-console.log(findLongestWordInSentence("hello world")); // "hello"
-console.log(findLongestWordInSentence("hello world from kaushik")); // "kaushik"
+console.dir(findLongestWordInSentence("The quick brown fox jumped")); // "jumped"
+console.dir(findLongestWordInSentence("hello world")); // "hello"
+console.dir(findLongestWordInSentence("hello world from kaushik")); // "kaushik"

@@ -26,5 +26,5 @@ function firstNonRepeatingChar(str) {
   return null;
 }
 
-console.log(firstNonRepeatingChar("leetcode")); // l
-console.log(firstNonRepeatingChar("aabb")); // null
+console.dir(firstNonRepeatingChar("leetcode")); // l
+console.dir(firstNonRepeatingChar("aabb")); // null

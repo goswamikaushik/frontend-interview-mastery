@@ -22,4 +22,4 @@ function mostFrequentCharacter(str) {
 
   return mostFrequentChar;
 }
-console.log(mostFrequentCharacter("javascradadadseeeeeeeeeeadipt"));
+console.dir(mostFrequentCharacter("javascradadadseeeeeeeeeeadipt"));

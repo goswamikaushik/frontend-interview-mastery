@@ -15,8 +15,8 @@ function capitalizeFirstCharOfWord(str) {
 
   return results.join(" ");
 }
-console.log(capitalizeFirstCharOfWord("hello world")); // "Hello World"
-console.log(capitalizeFirstCharOfWord("hello world from kaushik")); // "Hello World From Kaushik"
-console.log(capitalizeFirstCharOfWord("javascript")); // "Hello World"
-console.log(capitalizeFirstCharOfWord("a   good   example")); // "A Good Example"
-console.log(capitalizeFirstCharOfWord("   hello world")); // "Hello World"
+console.dir(capitalizeFirstCharOfWord("hello world")); // "Hello World"
+console.dir(capitalizeFirstCharOfWord("hello world from kaushik")); // "Hello World From Kaushik"
+console.dir(capitalizeFirstCharOfWord("javascript")); // "Hello World"
+console.dir(capitalizeFirstCharOfWord("a   good   example")); // "A Good Example"
+console.dir(capitalizeFirstCharOfWord("   hello world")); // "Hello World"
