@@ -22,9 +22,9 @@ function reverseWordsInString(str) {
   return reversed;
 }
 
-console.log(reverseWordsInString("the sky is blue")); // blue is sky the
-console.log(reverseWordsInString(" hello world ")); // world hello
-console.log(reverseWordsInString("a   good   example")); // example good a
+console.dir(reverseWordsInString("the sky is blue")); // blue is sky the
+console.dir(reverseWordsInString(" hello world ")); // world hello
+console.dir(reverseWordsInString("a   good   example")); // example good a
 
 // with built in method
 function reverseWordsInStringUsingMethods(str) {

@@ -19,7 +19,7 @@ function characterCount(str) {
 
   return obj;
 }
-// console.log(characterCount("banana"));
+// console.dir(characterCount("banana"));
 
 function characterFrequency(str) {
   const frequency = {};
@@ -30,4 +30,4 @@ function characterFrequency(str) {
 
   return frequency;
 }
-console.log(characterFrequency("banana"));
+console.dir(characterFrequency("banana"));

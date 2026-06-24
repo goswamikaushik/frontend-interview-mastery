@@ -18,4 +18,4 @@ function missingNumber(arr) {
   return expectedSum - actualSum;
 }
 
-console.log(missingNumber([1, 2, 4, 5, 6]));
+console.dir(missingNumber([1, 2, 4, 5, 6]));

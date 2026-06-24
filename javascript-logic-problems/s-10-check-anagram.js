@@ -11,7 +11,7 @@ function checkAnagram(str1, str2) {
 
   return str1.split("").sort().join("") === str2.split("").sort().join("");
 }
-// console.log(checkAnagram("hello", "world"));
+// console.dir(checkAnagram("hello", "world"));
 
 // Another Approach
 function checkAnagram1(str1, str2) {
@@ -35,4 +35,4 @@ function checkAnagram1(str1, str2) {
 
   return true;
 }
-console.log(checkAnagram1("hello", "world"));
+console.dir(checkAnagram1("hello", "world"));

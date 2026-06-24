@@ -27,7 +27,7 @@ function toggleCase(str) {
   }
   return result;
 }
-// console.log(toggleCase("Hello World"));
+// console.dir(toggleCase("Hello World"));
 
 function toggleCase2(str) {
   let result = "";
@@ -42,7 +42,7 @@ function toggleCase2(str) {
 
   return result;
 }
-// console.log(toggleCase2("Hello World"));
+// console.dir(toggleCase2("Hello World"));
 
 function toggleCase3(str) {
   const result = [];
@@ -59,7 +59,7 @@ function toggleCase3(str) {
 
   return result.join("");
 }
-// console.log(toggleCase3("Hello World"));
+// console.dir(toggleCase3("Hello World"));
 
 function toggleCase4(str) {
   let result = "";
@@ -78,4 +78,4 @@ function toggleCase4(str) {
 
   return result;
 }
-console.log(toggleCase4("Hello World"));
+console.dir(toggleCase4("Hello World"));

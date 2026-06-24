@@ -22,8 +22,8 @@ function stringCompression(str) {
   return result.length < str.length ? result : str;
 }
 
-console.log(stringCompression("aaabbbcc")); // a3b3c2
+console.dir(stringCompression("aaabbbcc")); // a3b3c2
 
-console.log(stringCompression("aaabbbccaa")); // a3b3c2a2
+console.dir(stringCompression("aaabbbccaa")); // a3b3c2a2
 
-console.log(stringCompression("abcd")); // abcd
+console.dir(stringCompression("abcd")); // abcd

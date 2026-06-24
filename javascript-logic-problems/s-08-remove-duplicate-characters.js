@@ -13,7 +13,7 @@ function removeDuplicate(str) {
   }
   return newStr;
 }
-// console.log(removeDuplicate("banana"));
+// console.dir(removeDuplicate("banana"));
 
 // better approach
 function removeDuplicate2(str) {
@@ -28,10 +28,10 @@ function removeDuplicate2(str) {
   }
   return newStr;
 }
-// console.log(removeDuplicate2("banana"));
+// console.dir(removeDuplicate2("banana"));
 
 // better approach
 function removeDuplicate3(str) {
   return [...new Set(str)].join("");
 }
-console.log(removeDuplicate3("banana"));
+console.dir(removeDuplicate3("banana"));

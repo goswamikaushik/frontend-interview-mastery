@@ -17,7 +17,7 @@ function duplicateCharacter(str) {
   }
   return duplicateChars;
 }
-// console.log(duplicateCharacter("programming"));
+// console.dir(duplicateCharacter("programming"));
 
 // second approach
 function duplicateCharacter2(str) {
@@ -37,5 +37,5 @@ function duplicateCharacter2(str) {
   return duplicates;
 }
 
-console.log(duplicateCharacter2("programming"));
+console.dir(duplicateCharacter2("programming"));
 // ["r", "g", "m"]

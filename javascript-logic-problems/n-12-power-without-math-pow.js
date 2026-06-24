@@ -14,7 +14,7 @@ function powerWithoutMathPow(base, exponent) {
   return result;
 }
 
-console.log(powerWithoutMathPow(2, 10));
+console.dir(powerWithoutMathPow(2, 10));
 
 // with recursion
 function powerWithRecursion(base, exponent) {

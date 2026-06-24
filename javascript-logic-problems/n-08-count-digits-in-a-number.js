@@ -19,8 +19,8 @@ function countDigitInNumber(n) {
   return count;
 }
 
-console.log(countDigitInNumber(12345)); // 5
-console.log(countDigitInNumber(1544544454)); // 10
-console.log(countDigitInNumber(7)); // 1
-console.log(countDigitInNumber(0)); // 1
-console.log(countDigitInNumber(-123)); // 3
+console.dir(countDigitInNumber(12345)); // 5
+console.dir(countDigitInNumber(1544544454)); // 10
+console.dir(countDigitInNumber(7)); // 1
+console.dir(countDigitInNumber(0)); // 1
+console.dir(countDigitInNumber(-123)); // 3

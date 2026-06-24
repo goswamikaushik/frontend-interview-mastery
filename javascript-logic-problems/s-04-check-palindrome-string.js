@@ -19,11 +19,6 @@ function checkPalindrome(str) {
   let right = lowercase.length - 1;
 
   while (left < right) {
-    console.log("---left-->", left);
-    console.log("--right-->", right);
-    console.log("--lowercase[left]-->", lowercase[left]);
-    console.log("--lowercase[right]-->", lowercase[right]);
-
     if (!(lowercase[left] === lowercase[right])) {
       return false;
     }
@@ -34,11 +29,11 @@ function checkPalindrome(str) {
   return true;
 }
 
-console.log(checkPalindrome("racecar"));
+console.dir(checkPalindrome("racecar"));
 
 function checkPalindromeWithMethod(str) {
   const lowercase = str.toLowerCase().replace(/[^a-z0-9]/g, "");
 
   return lowercase.split("").reverse().join("") === lowercase;
 }
-// console.log(checkPalindromeWithMethod("racecar"));
+// console.dir(checkPalindromeWithMethod("racecar"));

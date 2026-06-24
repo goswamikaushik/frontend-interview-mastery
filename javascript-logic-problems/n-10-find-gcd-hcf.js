@@ -20,4 +20,4 @@ function findGCD(a, b) {
 
   return a;
 }
-console.log(findGCD(12, 33));
+console.dir(findGCD(12, 33));

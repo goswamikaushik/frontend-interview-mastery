@@ -32,4 +32,4 @@ function integerToRoman(num) {
   return roman;
 }
 
-console.log(integerToRoman(1994));
+console.dir(integerToRoman(1994));

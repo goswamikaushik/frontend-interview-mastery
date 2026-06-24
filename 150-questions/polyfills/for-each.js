@@ -11,8 +11,6 @@ function testMyForEach() {
     }
   };
 
-  console.log("");
-
   return {
     TEST_1: {
       title: "Iterate All Elements",

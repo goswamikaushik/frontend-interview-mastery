@@ -85,11 +85,7 @@ function answer(data) {
   const getOrdersByMonth = (year, month) => {
     return data.flatMap((c) =>
       c.orders.filter((o) => {
-        // console.log("---o--->", o);
         const d = new Date(o.placedAt);
-        // console.log("--d--->", d);
-        // console.log("---year--->", d.getFullYear());
-        // console.log("---month--->", d.getMonth() + 1);
         return d.getFullYear() === year && d.getMonth() + 1 === month;
       }),
     );

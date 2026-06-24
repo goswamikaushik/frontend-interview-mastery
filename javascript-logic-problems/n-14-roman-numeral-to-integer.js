@@ -24,4 +24,4 @@ function romanNumeralToInteger(roman) {
   return total;
 }
 
-console.log(romanNumeralToInteger("MCMXCIV"));
+console.dir(romanNumeralToInteger("MCMXCIV"));

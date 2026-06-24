@@ -21,4 +21,4 @@ function reverseNumber(n) {
 
   return reversed * sign;
 }
-console.log(reverseNumber(712345));
+console.dir(reverseNumber(712345));

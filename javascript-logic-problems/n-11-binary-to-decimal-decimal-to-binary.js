@@ -16,7 +16,7 @@ function decimalTOBinary(n) {
   return binary;
 }
 
-// console.log(decimalTOBinary(10));
+// console.dir(decimalTOBinary(10));
 
 function binaryToDecimal(binary) {
   let decimal = 0;
@@ -27,4 +27,4 @@ function binaryToDecimal(binary) {
 
   return decimal;
 }
-console.log(binaryToDecimal("1010")); // 10
+console.dir(binaryToDecimal("1010")); // 10

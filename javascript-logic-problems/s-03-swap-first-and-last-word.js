@@ -13,4 +13,4 @@ function swapFLWord(str) {
 
   return words.join(" ");
 }
-console.log(swapFLWord("Hello my name is Kaushik"));
+console.dir(swapFLWord("Hello my name is Kaushik"));

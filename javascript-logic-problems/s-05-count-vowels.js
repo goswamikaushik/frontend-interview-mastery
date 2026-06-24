@@ -24,7 +24,7 @@ function countVowels(str) {
   return count;
 }
 
-console.log(countVowels("Hello World"));
+console.dir(countVowels("Hello World"));
 
 function countVowels(str) {
   let count = 0;

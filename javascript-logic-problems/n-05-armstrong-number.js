@@ -19,4 +19,4 @@ function isArmsStrongNumber(n) {
 
   return sum === n;
 }
-console.log(isArmsStrongNumber(153));
+console.dir(isArmsStrongNumber(153));
