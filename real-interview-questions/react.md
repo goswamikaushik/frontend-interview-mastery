@@ -294,109 +294,129 @@
 
 74. **How does Next.js Image component help performance?**
 
+75. **A Next.js page is loading slowly because it fetches data from multiple APIs. How would you optimize the page performance?**
+
+76. **You need to display frequently changing stock market data on a page. Would you use SSR, SSG, or CSR? Why?**
+
+77. **Your Next.js application has a large JavaScript bundle size affecting performance. How would you reduce it?**
+
+78. **You need to implement server-side caching to reduce API calls. How would you approach it?**
+
+79. **Your application has 10,000 blog posts. How would you generate and serve these pages efficiently?**
+
+80. **A page contains a heavy chart library that is only needed after user interaction. How would you optimize the loading strategy?**
+
+81. **You need to upload large files from the frontend to a cloud storage service. How would you implement the flow in Next.js?**
+
+82. **Your API routes are receiving a high volume of requests. How would you improve scalability and performance?**
+
+83. **You are migrating a React SPA to Next.js. What challenges would you expect and how would you handle them?**
+
+84. **How would you implement A/B testing in a Next.js application?**
+
 ---
 
 ## 🔹 Advanced / Scenario-Based
 
-75. **You suspect a memory leak in a React app — how do you isolate and resolve it?**
+85. **You suspect a memory leak in a React app — how do you isolate and resolve it?**
     - _Also asked as:_ You discover a memory leak in a production SPA — how do you debug and fix it?
 
-76. **A component breaks after a library upgrade — how do you manage dependencies safely?**
+86. **A component breaks after a library upgrade — how do you manage dependencies safely?**
 
-77. **How would you implement light/dark theme switching at scale without repaint cost spikes?**
+87. **How would you implement light/dark theme switching at scale without repaint cost spikes?**
 
-78. **A heavy analytics dashboard slows down on filtering — how do you profile and optimize?**
+88. **A heavy analytics dashboard slows down on filtering — how do you profile and optimize?**
 
-79. **How would you implement A/B testing without negatively impacting users?**
+89. **How would you implement A/B testing without negatively impacting users?**
 
-80. **How do you build accessibility-first UIs and meet WCAG requirements?**
+90. **How do you build accessibility-first UIs and meet WCAG requirements?**
 
-81. **Users report inconsistent UI issues across browsers — how do you troubleshoot?**
+91. **Users report inconsistent UI issues across browsers — how do you troubleshoot?**
     - _Also asked as:_ How do you guarantee layout and behavior consistency across browsers and screen sizes?
 
-82. **A critical UI feature fails during peak traffic — what's your immediate mitigation strategy?**
+92. **A critical UI feature fails during peak traffic — what's your immediate mitigation strategy?**
 
-83. **How would you build frontend monitoring and logging for production issues?**
+93. **How would you build frontend monitoring and logging for production issues?**
 
-84. **How would you migrate a legacy frontend to a modern framework with minimal risk?**
+94. **How would you migrate a legacy frontend to a modern framework with minimal risk?**
 
-85. **What was the hardest bug you fixed in React?**
+95. **What was the hardest bug you fixed in React?**
 
-86. **Tell me about a complex UI you built.**
+96. **Tell me about a complex UI you built.**
 
-87. **Have you used Storybook?**
+97. **Have you used Storybook?**
 
-88. **What is Atomic Design methodology?**
+98. **What is Atomic Design methodology?**
     - _Also asked as:_ How does Atomic Design relate to component structure?
 
-88. **Build a React list with collapse/expand feature.**
+99. **Build a React list with collapse/expand feature.**
 
-89. **Build React-like class components from scratch (ES5).**
+100. **Build React-like class components from scratch (ES5).**
 
-90. **Write a Promise polyfill with real use cases.**
+101. **Write a Promise polyfill with real use cases.**
 
-91. **Implement an async scheduler with max concurrency.**
+102. **Implement an async scheduler with max concurrency.**
 
-92. **Redux and Redux performance optimization.**
+103. **Redux and Redux performance optimization.**
 
-93. **useState and useEffect hooks — explain basics.**
+104. **useState and useEffect hooks — explain basics.**
 
-94. **Manipulating API response data in React.**
-    - _Also asked as:_ Fetch data from a public API and display it; on click, show details.
+105. **Manipulating API response data in React.**
+     - _Also asked as:_ Fetch data from a public API and display it; on click, show details.
 
-95. **Context API and its use cases.**
-    - _Also asked as:_ What is Context API? How does it work?
+106. **Context API and its use cases.**
+     - _Also asked as:_ What is Context API? How does it work?
 
 ---
 
 ## 🔹 Why React?
 
-96. **Why React.js?**
-    - _Also asked as:_ What are the latest React features and updates?
+107. **Why React.js?**
+     - _Also asked as:_ What are the latest React features and updates?
 
 ---
 
 ## 🔹 Stale Closures & React-JS Bridge
 
-97. **Why does React re-render?**
-    - _Also asked as:_ Referential equality & shallow comparison in React.
+108. **Why does React re-render?**
+     - _Also asked as:_ Referential equality & shallow comparison in React.
 
-98. **What are stale closures in React?**
-    - _Also asked as:_ Closures causing issues in React hooks.
+109. **What are stale closures in React?**
+     - _Also asked as:_ Closures causing issues in React hooks.
 
-99. **Immutability — why does it matter in React?**
-    - _Also asked as:_ Functional updates in React state.
+110. **Immutability — why does it matter in React?**
+     - _Also asked as:_ Functional updates in React state.
 
 ---
 
 ## 🔹 Scalability & Domain-Specific (Resume-Based)
 
-100. **How did your app perform with 8,000+ concurrent users?**
+111. **How did your app perform with 8,000+ concurrent users?**
 
-101. **What was your biggest performance bottleneck?**
+112. **What was your biggest performance bottleneck?**
 
-102. **How do you handle high-frequency state updates from real-time data?**
+113. **How do you handle high-frequency state updates from real-time data?**
 
-103. **How do you load test a frontend application?**
+114. **How do you load test a frontend application?**
 
-104. **How do you design for scalability from day one?**
+115. **How do you design for scalability from day one?**
 
-105. **If you're selling one product, what's your core site architecture?**
+116. **If you're selling one product, what's your core site architecture?**
 
 ---
 
 ## 🔹 Backtesting Feature (Resume-Based)
 
-106. **How did you architect the backtesting feature on the frontend?**
+117. **How did you architect the backtesting feature on the frontend?**
 
-107. **How did you support 6 market types with one unified interface?**
+118. **How did you support 6 market types with one unified interface?**
 
-108. **What is a candle interval in trading?**
+119. **What is a candle interval in trading?**
 
-109. **How did you implement stop-loss and take-profit logic on the frontend?**
+120. **How did you implement stop-loss and take-profit logic on the frontend?**
 
-110. **How did you manage session state across a long backtesting run?**
+121. **How did you manage session state across a long backtesting run?**
 
-111. **How did you handle configurable sessions on the UI side?**
+122. **How did you handle configurable sessions on the UI side?**
 
-112. **How did you stream backtesting data to UI progressively?**
+123. **How did you stream backtesting data to UI progressively?**
