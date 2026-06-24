@@ -86,7 +86,7 @@ frontend-interview-mastery/
 
 | #   | File                                                                         | Category                                                    | Questions |
 | --- | ---------------------------------------------------------------------------- | ----------------------------------------------------------- | :-------: |
-| 1   | [⚛️ react.md](./real-interview-questions/react.md)                           | React, Next.js, State Management, Hooks, Patterns           |    121    |
+| 1   | [⚛️ react.md](./real-interview-questions/react.md)                           | React, Next.js, State Management, Hooks, Patterns           |    131    |
 | 2   | [🟡 javascript.md](./real-interview-questions/javascript.md)                 | JS Core, Closures, Event Loop, Prototypes, ES6+             |    107    |
 | 3   | [🔵 html.md](./real-interview-questions/html.md)                             | Semantic HTML, Forms, Accessibility, Browser Parsing        |    12     |
 | 4   | [🎨 css.md](./real-interview-questions/css.md)                               | Flexbox, Grid, Positioning, Animations, BEM, Design Systems |    22     |
