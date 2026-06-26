@@ -24,7 +24,7 @@
 
 ### N-01 · Check Prime Number
 
-**Difficulty:** Easy | **Asked:** Every year
+**Difficulty:** Easy | **Pattern:** Primality Test | **Asked:** Every year
 
 **Problem:**
 Write a function that returns `true` if a number is prime, `false` otherwise.
@@ -42,7 +42,7 @@ A prime number is divisible only by 1 and itself.
 
 ### N-02 · Check Leap Year
 
-**Difficulty:** Easy | **Asked:** 2023, 2024, 2025
+**Difficulty:** Easy | **Pattern:** Basic Logic | **Asked:** 2023, 2024, 2025
 
 **Problem:**
 A year is a leap year if:
@@ -63,7 +63,7 @@ A year is a leap year if:
 
 ### N-03 · Fibonacci Sequence
 
-**Difficulty:** Easy–Medium | **Asked:** Every year
+**Difficulty:** Easy–Medium | **Pattern:** Iteration / Recursion | **Asked:** Every year
 
 **Problem:**
 Return the first `n` Fibonacci numbers.
@@ -78,7 +78,7 @@ Each number = sum of the two before it.
 
 ### N-04 · Factorial
 
-**Difficulty:** Easy | **Asked:** Every year
+**Difficulty:** Easy | **Pattern:** Iteration / Recursion | **Asked:** Every year
 
 **Problem:**
 Return `n!` (n factorial). Both iterative and recursive.
@@ -93,7 +93,7 @@ Return `n!` (n factorial). Both iterative and recursive.
 
 ### N-05 · Armstrong Number
 
-**Difficulty:** Easy | **Asked:** 2023, 2024
+**Difficulty:** Easy | **Pattern:** Digit Extraction | **Asked:** 2023, 2024
 
 **Problem:**
 A number is Armstrong if the sum of its digits each raised to the power of digit count equals the number.
@@ -109,7 +109,7 @@ A number is Armstrong if the sum of its digits each raised to the power of digit
 
 ### N-06 · Reverse a Number
 
-**Difficulty:** Easy | **Asked:** 2023, 2024, 2025
+**Difficulty:** Easy | **Pattern:** Digit Extraction | **Asked:** 2023, 2024, 2025
 
 **Problem:**
 Reverse the digits of a number. Do NOT convert to string.
@@ -124,7 +124,7 @@ Reverse the digits of a number. Do NOT convert to string.
 
 ### N-07 · Sum of Digits
 
-**Difficulty:** Easy | **Asked:** 2023, 2024
+**Difficulty:** Easy | **Pattern:** Digit Extraction | **Asked:** 2023, 2024
 
 **Problem:**
 Return the sum of all digits in a number.
@@ -136,7 +136,7 @@ Return the sum of all digits in a number.
 
 ### N-08 · Count Digits in a Number
 
-**Difficulty:** Easy | **Asked:** 2024
+**Difficulty:** Easy | **Pattern:** Digit Extraction | **Asked:** 2024
 
 **Problem:**
 Count how many digits are in a number without converting to string.
@@ -148,7 +148,7 @@ Count how many digits are in a number without converting to string.
 
 ### N-09 · Missing Number (1 to N)
 
-**Difficulty:** Easy | **Asked:** 2024, 2025, 2026
+**Difficulty:** Easy | **Pattern:** Math Sum Formula | **Asked:** 2024, 2025, 2026
 
 **Problem:**
 Given array of n-1 numbers from 1 to n, find the missing one.
@@ -161,7 +161,7 @@ Trick: sum formula → `n*(n+1)/2 - actual sum`
 
 ### N-10 · Find GCD / HCF
 
-**Difficulty:** Easy–Medium | **Asked:** 2023, 2024
+**Difficulty:** Easy–Medium | **Pattern:** Euclidean Algorithm | **Asked:** 2023, 2024
 
 **Problem:**
 Find the Greatest Common Divisor of two numbers using Euclidean algorithm.
@@ -174,7 +174,7 @@ Find the Greatest Common Divisor of two numbers using Euclidean algorithm.
 
 ### N-11 · Binary to Decimal / Decimal to Binary
 
-**Difficulty:** Medium | **Asked:** 2024, 2025
+**Difficulty:** Medium | **Pattern:** Base Conversion | **Asked:** 2024, 2025
 
 **Problem A:** Convert decimal number to binary string without `toString(2)`
 **Problem B:** Convert binary string to decimal without `parseInt(n, 2)`
@@ -189,7 +189,7 @@ Find the Greatest Common Divisor of two numbers using Euclidean algorithm.
 
 ### N-12 · Power Without Math.pow
 
-**Difficulty:** Easy–Medium | **Asked:** 2024, 2025
+**Difficulty:** Easy–Medium | **Pattern:** Iteration / Recursion | **Asked:** 2024, 2025
 
 **Problem:**
 Implement `power(base, exp)` without using `Math.pow` or `**`.
@@ -203,7 +203,7 @@ Implement `power(base, exp)` without using `Math.pow` or `**`.
 
 ### N-13 · Palindrome Number
 
-**Difficulty:** Easy | **Asked:** 2023, 2024
+**Difficulty:** Easy | **Pattern:** Digit Extraction | **Asked:** 2023, 2024
 
 **Problem:**
 Check if a number reads the same forwards and backwards. No string conversion.
@@ -221,7 +221,7 @@ Check if a number reads the same forwards and backwards. No string conversion.
 
 ### N-14 · Roman Numeral to Integer
 
-**Difficulty:** Medium | **Asked:** 2024, 2025, 2026
+**Difficulty:** Medium | **Pattern:** HashMap / Simulation | **Asked:** 2024, 2025, 2026
 
 **Problem:**
 Convert Roman numeral string to integer.
@@ -238,7 +238,7 @@ If smaller value comes before larger → subtract it. `IV = 4, IX = 9`
 
 ### N-15 · Integer to Roman Numeral
 
-**Difficulty:** Medium | **Asked:** 2024, 2025
+**Difficulty:** Medium | **Pattern:** Greedy / Simulation | **Asked:** 2024, 2025
 
 **Problem:**
 Convert integer to Roman numeral string.
@@ -257,7 +257,7 @@ Convert integer to Roman numeral string.
 
 ### S-01 · Reverse a String
 
-**Difficulty:** Easy | **Asked:** Every year
+**Difficulty:** Easy | **Pattern:** Basic Traversal / Two Pointers | **Asked:** Every year
 
 **Problem:**
 Reverse a string WITHOUT using `.reverse()`.
@@ -270,7 +270,7 @@ Use a loop.
 
 ### S-02 · Reverse Words in a String ⚠️
 
-**Difficulty:** Easy–Medium | **Asked:** 2024, 2025, 2026 — YOU WERE ASKED THIS
+**Difficulty:** Easy–Medium | **Pattern:** Split + Traversal | **Asked:** 2024, 2025, 2026 — YOU WERE ASKED THIS
 
 **Problem:**
 Reverse the ORDER of words, not characters.
@@ -289,7 +289,7 @@ Handle extra spaces.
 
 ### S-03 · Swap First and Last Word ⚠️
 
-**Difficulty:** Easy | **Asked:** 2024, 2025 — YOU WERE ASKED THIS
+**Difficulty:** Easy | **Pattern:** Traversal | **Asked:** 2024, 2025 — YOU WERE ASKED THIS
 
 **Problem:**
 Swap the first and last word of a sentence.
@@ -301,7 +301,7 @@ Swap the first and last word of a sentence.
 
 ### S-04 · Check Palindrome String
 
-**Difficulty:** Easy | **Asked:** Every year
+**Difficulty:** Easy | **Pattern:** Two Pointers | **Asked:** Every year
 
 **Problem:**
 Check if a string reads same forwards and backwards.
@@ -320,7 +320,7 @@ Ignore case, ignore non-alphanumeric.
 
 ### S-05 · Count Vowels
 
-**Difficulty:** Easy | **Asked:** 2023, 2024
+**Difficulty:** Easy | **Pattern:** Traversal | **Asked:** 2023, 2024
 
 **Problem:**
 Count how many vowels (a, e, i, o, u) are in a string.
@@ -332,7 +332,7 @@ Count how many vowels (a, e, i, o, u) are in a string.
 
 ### S-06 · Character Frequency Map
 
-**Difficulty:** Easy | **Asked:** Every year
+**Difficulty:** Easy | **Pattern:** HashMap | **Asked:** Every year
 
 **Problem:**
 Count how many times each character appears.
@@ -344,7 +344,7 @@ Count how many times each character appears.
 
 ### S-07 · Find Duplicate Characters
 
-**Difficulty:** Easy | **Asked:** 2023, 2024, 2025
+**Difficulty:** Easy | **Pattern:** HashMap | **Asked:** 2023, 2024, 2025
 
 **Problem:**
 Return characters that appear more than once.
@@ -356,7 +356,7 @@ Return characters that appear more than once.
 
 ### S-08 · Remove Duplicate Characters
 
-**Difficulty:** Easy | **Asked:** 2024, 2025
+**Difficulty:** Easy | **Pattern:** Set | **Asked:** 2024, 2025
 
 **Problem:**
 Return string with duplicate characters removed. Keep first occurrence.
@@ -368,7 +368,7 @@ Return string with duplicate characters removed. Keep first occurrence.
 
 ### S-09 · First Non-Repeating Character
 
-**Difficulty:** Easy–Medium | **Asked:** 2024, 2025, 2026
+**Difficulty:** Easy–Medium | **Pattern:** HashMap | **Asked:** 2024, 2025, 2026
 
 **Problem:**
 Find the first character that appears exactly once.
@@ -385,7 +385,7 @@ Find the first character that appears exactly once.
 
 ### S-10 · Check Anagram
 
-**Difficulty:** Easy | **Asked:** Every year
+**Difficulty:** Easy | **Pattern:** HashMap / Sorting | **Asked:** Every year
 
 **Problem:**
 Two strings are anagrams if they use the same characters with same frequency.
@@ -400,7 +400,7 @@ Two strings are anagrams if they use the same characters with same frequency.
 
 ### S-11 · Title Case (Capitalize Each Word)
 
-**Difficulty:** Easy | **Asked:** 2023, 2024
+**Difficulty:** Easy | **Pattern:** Traversal | **Asked:** 2023, 2024
 
 **Problem:**
 Capitalize first letter of every word.
@@ -412,7 +412,7 @@ Capitalize first letter of every word.
 
 ### S-12 · Longest Word in a String
 
-**Difficulty:** Easy | **Asked:** 2023, 2024
+**Difficulty:** Easy | **Pattern:** Traversal | **Asked:** 2023, 2024
 
 **Problem:**
 Find the longest word in a sentence.
@@ -424,7 +424,7 @@ Find the longest word in a sentence.
 
 ### S-13 · Most Frequent Character
 
-**Difficulty:** Easy | **Asked:** 2024, 2025
+**Difficulty:** Easy | **Pattern:** HashMap | **Asked:** 2024, 2025
 
 **Problem:**
 Find the character that appears most often.
@@ -436,7 +436,7 @@ Find the character that appears most often.
 
 ### S-14 · String Compression (Run-Length Encoding)
 
-**Difficulty:** Medium | **Asked:** 2024, 2025, 2026
+**Difficulty:** Medium | **Pattern:** Two Pointers / Run-Length Encoding | **Asked:** 2024, 2025, 2026
 
 **Problem:**
 Compress consecutive repeated characters.
@@ -451,7 +451,7 @@ Compress consecutive repeated characters.
 
 ### S-15 · Toggle Case
 
-**Difficulty:** Easy | **Asked:** 2023, 2024
+**Difficulty:** Easy | **Pattern:** Character Manipulation | **Asked:** 2023, 2024
 
 **Problem:**
 Uppercase letters become lowercase, lowercase become uppercase.
@@ -463,7 +463,7 @@ Uppercase letters become lowercase, lowercase become uppercase.
 
 ### S-16 · Longest Substring Without Repeating Characters ⭐
 
-**Difficulty:** Medium | **Asked:** 2024, 2025, 2026 — Very popular
+**Difficulty:** Medium | **Pattern:** Sliding Window + Set | **Asked:** 2024, 2025, 2026 — Very popular
 
 **Problem:**
 Find length of longest substring with no duplicate characters.
@@ -483,7 +483,7 @@ Find length of longest substring with no duplicate characters.
 
 ### S-17 · Valid Parentheses / Balanced Brackets ⭐
 
-**Difficulty:** Medium | **Asked:** 2024, 2025, 2026 — Very popular
+**Difficulty:** Medium | **Pattern:** Stack | **Asked:** 2024, 2025, 2026 — Very popular
 
 **Problem:**
 Check if brackets are balanced and correctly ordered.
@@ -506,7 +506,7 @@ Check if brackets are balanced and correctly ordered.
 
 ### S-18 · Check Rotation
 
-**Difficulty:** Medium | **Asked:** 2024, 2025
+**Difficulty:** Medium | **Pattern:** String Manipulation | **Asked:** 2024, 2025
 
 **Problem:**
 Check if string B is a rotation of string A.
@@ -520,7 +520,7 @@ Check if string B is a rotation of string A.
 
 ### S-19 · Count Substring Occurrences
 
-**Difficulty:** Easy | **Asked:** 2023, 2024
+**Difficulty:** Easy | **Pattern:** Traversal | **Asked:** 2023, 2024
 
 **Problem:**
 Count how many times a substring appears in a string. WITHOUT `.split()` trick.
@@ -532,7 +532,7 @@ Count how many times a substring appears in a string. WITHOUT `.split()` trick.
 
 ### S-20 · Longest Common Prefix
 
-**Difficulty:** Medium | **Asked:** 2024, 2025, 2026
+**Difficulty:** Medium | **Pattern:** Prefix Comparison | **Asked:** 2024, 2025, 2026
 
 **Problem:**
 Find the longest common prefix among an array of strings.
@@ -547,7 +547,7 @@ Find the longest common prefix among an array of strings.
 
 ### S-21 · Caesar Cipher
 
-**Difficulty:** Medium | **Asked:** 2024, 2025
+**Difficulty:** Medium | **Pattern:** Simulation | **Asked:** 2024, 2025
 
 **Problem:**
 Shift each letter in the string by `k` positions in the alphabet. Wrap around.
@@ -562,7 +562,7 @@ Shift each letter in the string by `k` positions in the alphabet. Wrap around.
 
 ### S-22 · Find All Permutations of a String
 
-**Difficulty:** Hard | **Asked:** 2024, 2025
+**Difficulty:** Hard | **Pattern:** Recursion + Backtracking | **Asked:** 2024, 2025
 
 **Problem:**
 Return all possible arrangements of characters.
@@ -576,7 +576,7 @@ Return all possible arrangements of characters.
 
 ### S-23 · Check if String has Only Digits
 
-**Difficulty:** Easy | **Asked:** 2023, 2024
+**Difficulty:** Easy | **Pattern:** Traversal | **Asked:** 2023, 2024
 
 **Problem:**
 Return true if string contains only numeric digits.
@@ -591,7 +591,7 @@ Return true if string contains only numeric digits.
 
 ### S-24 · Truncate String
 
-**Difficulty:** Easy | **Asked:** 2023, 2024
+**Difficulty:** Easy | **Pattern:** Traversal | **Asked:** 2023, 2024
 
 **Problem:**
 Truncate a string to `n` characters. Append `"..."` if truncated.
@@ -606,7 +606,7 @@ Truncate a string to `n` characters. Append `"..."` if truncated.
 
 ### S-25 · Remove All Spaces
 
-**Difficulty:** Easy | **Asked:** 2023
+**Difficulty:** Easy | **Pattern:** Traversal | **Asked:** 2023
 
 **Problem:**
 Remove all spaces from a string without `.replace()`.
@@ -618,7 +618,7 @@ Remove all spaces from a string without `.replace()`.
 
 ### S-26 · Word Count in a String
 
-**Difficulty:** Easy | **Asked:** 2023, 2024
+**Difficulty:** Easy | **Pattern:** Traversal | **Asked:** 2023, 2024
 
 **Problem:**
 Count number of words in a string. Handle multiple spaces.
@@ -630,7 +630,7 @@ Count number of words in a string. Handle multiple spaces.
 
 ### S-27 · Group Anagrams Together ⭐
 
-**Difficulty:** Medium | **Asked:** 2024, 2025, 2026
+**Difficulty:** Medium | **Pattern:** HashMap + Sorting | **Asked:** 2024, 2025, 2026
 
 **Problem:**
 Group words that are anagrams of each other.
@@ -644,7 +644,7 @@ Group words that are anagrams of each other.
 
 ### S-28 · Find All Duplicate Words in a Sentence
 
-**Difficulty:** Easy–Medium | **Asked:** 2024, 2025
+**Difficulty:** Easy–Medium | **Pattern:** HashMap | **Asked:** 2024, 2025
 
 **Problem:**
 Find words that appear more than once in a sentence.
@@ -656,7 +656,7 @@ Find words that appear more than once in a sentence.
 
 ### S-29 · Decode String ⭐
 
-**Difficulty:** Medium–Hard | **Asked:** 2025, 2026
+**Difficulty:** Medium–Hard | **Pattern:** Stack | **Asked:** 2025, 2026
 
 **Problem:**
 Decode an encoded string. `k[encoded]` means repeat `encoded` k times.
@@ -673,7 +673,7 @@ Decode an encoded string. `k[encoded]` means repeat `encoded` k times.
 
 ### S-30 · String to Integer (atoi)
 
-**Difficulty:** Medium | **Asked:** 2025, 2026
+**Difficulty:** Medium | **Pattern:** Simulation | **Asked:** 2025, 2026
 
 **Problem:**
 Convert string to integer WITHOUT `parseInt`. Handle spaces, signs, invalid chars.
@@ -695,7 +695,7 @@ Convert string to integer WITHOUT `parseInt`. Handle spaces, signs, invalid char
 
 ### A-01 · Find Max and Min
 
-**Difficulty:** Easy | **Asked:** Every year
+**Difficulty:** Easy | **Pattern:** Traversal | **Asked:** Every year
 
 **Problem:**
 Find the maximum and minimum values without using `Math.max/min`.
@@ -707,7 +707,7 @@ Find the maximum and minimum values without using `Math.max/min`.
 
 ### A-02 · Reverse an Array
 
-**Difficulty:** Easy | **Asked:** Every year
+**Difficulty:** Easy | **Pattern:** Two Pointers | **Asked:** Every year
 
 **Problem:**
 Reverse array WITHOUT using `.reverse()`. Use two pointers (swap in-place).
@@ -719,7 +719,7 @@ Reverse array WITHOUT using `.reverse()`. Use two pointers (swap in-place).
 
 ### A-03 · Remove Duplicates from Array
 
-**Difficulty:** Easy | **Asked:** Every year
+**Difficulty:** Easy | **Pattern:** Set / Filter | **Asked:** Every year
 
 **Problem:**
 Return array with duplicates removed. Three approaches: Set, filter+indexOf, reduce.
@@ -731,7 +731,7 @@ Return array with duplicates removed. Three approaches: Set, filter+indexOf, red
 
 ### A-04 · Flatten Nested Array
 
-**Difficulty:** Easy–Medium | **Asked:** 2024, 2025, 2026
+**Difficulty:** Easy–Medium | **Pattern:** Recursion | **Asked:** 2024, 2025, 2026
 
 **Problem:**
 Flatten array to any depth WITHOUT using `.flat()`.
@@ -745,7 +745,7 @@ Flatten array to any depth WITHOUT using `.flat()`.
 
 ### A-05 · Find Second Largest
 
-**Difficulty:** Easy | **Asked:** 2023, 2024, 2025
+**Difficulty:** Easy | **Pattern:** Traversal | **Asked:** 2023, 2024, 2025
 
 **Problem:**
 Find second largest number in array WITHOUT sorting.
@@ -757,7 +757,7 @@ Find second largest number in array WITHOUT sorting.
 
 ### A-06 · Rotate Array by K Positions ⭐
 
-**Difficulty:** Medium | **Asked:** 2024, 2025, 2026
+**Difficulty:** Medium | **Pattern:** Array Reversal / Rotation | **Asked:** 2024, 2025, 2026
 
 **Problem:**
 Rotate array to the right by `k` steps.
@@ -771,7 +771,7 @@ Rotate array to the right by `k` steps.
 
 ### A-07 · Chunk Array
 
-**Difficulty:** Easy–Medium | **Asked:** 2024, 2025
+**Difficulty:** Easy–Medium | **Pattern:** Slice / Traversal | **Asked:** 2024, 2025
 
 **Problem:**
 Split array into chunks of size `n`.
@@ -783,7 +783,7 @@ Split array into chunks of size `n`.
 
 ### A-08 · Union of Two Arrays
 
-**Difficulty:** Easy | **Asked:** 2023, 2024
+**Difficulty:** Easy | **Pattern:** Set | **Asked:** 2023, 2024
 
 **Problem:**
 Return all unique elements from both arrays.
@@ -795,7 +795,7 @@ Return all unique elements from both arrays.
 
 ### A-09 · Intersection of Two Arrays
 
-**Difficulty:** Easy | **Asked:** 2023, 2024
+**Difficulty:** Easy | **Pattern:** Set / HashMap | **Asked:** 2023, 2024
 
 **Problem:**
 Return elements that appear in BOTH arrays.
@@ -807,7 +807,7 @@ Return elements that appear in BOTH arrays.
 
 ### A-10 · Difference of Two Arrays
 
-**Difficulty:** Easy | **Asked:** 2023, 2024
+**Difficulty:** Easy | **Pattern:** Set | **Asked:** 2023, 2024
 
 **Problem:**
 Return elements that are in A but NOT in B.
@@ -819,7 +819,7 @@ Return elements that are in A but NOT in B.
 
 ### A-11 · Sort Without Built-in Sort ⭐
 
-**Difficulty:** Medium | **Asked:** 2024, 2025
+**Difficulty:** Medium | **Pattern:** Bubble Sort / Sorting | **Asked:** 2024, 2025
 
 **Problem:**
 Sort an array without `.sort()`. Implement Bubble Sort.
@@ -832,7 +832,7 @@ Know the logic: compare adjacent elements, swap if out of order.
 
 ### A-12 · Find All Duplicates
 
-**Difficulty:** Easy–Medium | **Asked:** 2024, 2025
+**Difficulty:** Easy–Medium | **Pattern:** HashMap / Set | **Asked:** 2024, 2025
 
 **Problem:**
 Return all elements that appear more than once.
@@ -844,7 +844,7 @@ Return all elements that appear more than once.
 
 ### A-13 · Move Zeros to End
 
-**Difficulty:** Easy | **Asked:** 2024, 2025
+**Difficulty:** Easy | **Pattern:** Two Pointers | **Asked:** 2024, 2025
 
 **Problem:**
 Move all zeros to the end, maintain order of non-zero elements.
@@ -856,7 +856,7 @@ Move all zeros to the end, maintain order of non-zero elements.
 
 ### A-14 · Max Subarray Sum (Kadane's Algorithm) ⭐
 
-**Difficulty:** Medium | **Asked:** 2024, 2025, 2026 — Very popular
+**Difficulty:** Medium | **Pattern:** Kadane's Algorithm | **Asked:** 2024, 2025, 2026 — Very popular
 
 **Problem:**
 Find the contiguous subarray with the largest sum.
@@ -870,7 +870,7 @@ Find the contiguous subarray with the largest sum.
 
 ### A-15 · Merge Two Sorted Arrays
 
-**Difficulty:** Medium | **Asked:** 2024, 2025
+**Difficulty:** Medium | **Pattern:** Two Pointers | **Asked:** 2024, 2025
 
 **Problem:**
 Merge two sorted arrays into one sorted array WITHOUT `.concat().sort()`.
@@ -884,7 +884,7 @@ Merge two sorted arrays into one sorted array WITHOUT `.concat().sort()`.
 
 ### A-16 · Majority Element ⭐
 
-**Difficulty:** Medium | **Asked:** 2024, 2025, 2026
+**Difficulty:** Medium | **Pattern:** Boyer-Moore Voting / HashMap | **Asked:** 2024, 2025, 2026
 
 **Problem:**
 Find element that appears more than n/2 times.
@@ -899,7 +899,7 @@ Find element that appears more than n/2 times.
 
 ### A-17 · Product of Array Except Self ⭐
 
-**Difficulty:** Medium | **Asked:** 2025, 2026
+**Difficulty:** Medium | **Pattern:** Prefix & Suffix Products | **Asked:** 2025, 2026
 
 **Problem:**
 For each index, return product of all OTHER elements. No division allowed.
@@ -911,7 +911,7 @@ For each index, return product of all OTHER elements. No division allowed.
 
 ### A-18 · Two Sum ⭐
 
-**Difficulty:** Easy–Medium | **Asked:** Every year
+**Difficulty:** Easy–Medium | **Pattern:** HashMap | **Asked:** Every year
 
 **Problem:**
 Find two numbers that add up to a target. Return their indices.
@@ -925,7 +925,7 @@ Find two numbers that add up to a target. Return their indices.
 
 ### A-19 · Three Sum
 
-**Difficulty:** Medium | **Asked:** 2025, 2026
+**Difficulty:** Medium | **Pattern:** Two Pointers / Sorting | **Asked:** 2025, 2026
 
 **Problem:**
 Find all unique triplets that sum to zero.
@@ -939,7 +939,7 @@ Find all unique triplets that sum to zero.
 
 ### A-20 · Sliding Window Maximum ⭐
 
-**Difficulty:** Hard | **Asked:** 2025, 2026
+**Difficulty:** Hard | **Pattern:** Sliding Window / Deque | **Asked:** 2025, 2026
 
 **Problem:**
 Given array and window size k, return max of each window.
@@ -953,7 +953,7 @@ Given array and window size k, return max of each window.
 
 ### A-21 · Count Occurrences of Each Element
 
-**Difficulty:** Easy | **Asked:** 2023, 2024
+**Difficulty:** Easy | **Pattern:** HashMap | **Asked:** 2023, 2024
 
 **Problem:**
 Return frequency map of all elements.
@@ -965,7 +965,7 @@ Return frequency map of all elements.
 
 ### A-22 · Find Pair with Given Sum
 
-**Difficulty:** Easy–Medium | **Asked:** 2024, 2025
+**Difficulty:** Easy–Medium | **Pattern:** HashMap / Two Pointers | **Asked:** 2024, 2025
 
 **Problem:**
 Find if any two elements sum to target. Return the pair.
@@ -977,7 +977,7 @@ Find if any two elements sum to target. Return the pair.
 
 ### A-23 · Sort Array of 0s, 1s and 2s (Dutch National Flag) ⭐
 
-**Difficulty:** Medium | **Asked:** 2025, 2026
+**Difficulty:** Medium | **Pattern:** Three Pointers | **Asked:** 2025, 2026
 
 **Problem:**
 Sort array containing only 0s, 1s, and 2s WITHOUT counting sort.
@@ -991,7 +991,7 @@ Sort array containing only 0s, 1s, and 2s WITHOUT counting sort.
 
 ### A-24 · Find Subarray with Given Sum
 
-**Difficulty:** Medium | **Asked:** 2024, 2025
+**Difficulty:** Medium | **Pattern:** Sliding Window / Prefix Sum | **Asked:** 2024, 2025
 
 **Problem:**
 Find a contiguous subarray that sums to target.
@@ -1003,7 +1003,7 @@ Find a contiguous subarray that sums to target.
 
 ### A-25 · Matrix Transpose
 
-**Difficulty:** Medium | **Asked:** 2024, 2025
+**Difficulty:** Medium | **Pattern:** Matrix Traversal | **Asked:** 2024, 2025
 
 **Problem:**
 Transpose a matrix (rows become columns).
@@ -1028,7 +1028,7 @@ Transpose a matrix (rows become columns).
 
 ### A-26 · Matrix Rotate 90 Degrees
 
-**Difficulty:** Medium | **Asked:** 2025, 2026
+**Difficulty:** Medium | **Pattern:** Matrix Traversal / In-place Manipulation | **Asked:** 2025, 2026
 
 **Problem:**
 Rotate matrix 90 degrees clockwise.
@@ -1053,7 +1053,7 @@ Rotate matrix 90 degrees clockwise.
 
 ### A-27 · Leaders in an Array
 
-**Difficulty:** Easy–Medium | **Asked:** 2024, 2025
+**Difficulty:** Easy–Medium | **Pattern:** Reverse Traversal | **Asked:** 2024, 2025
 
 **Problem:**
 An element is a "leader" if it's greater than all elements to its right.
@@ -1066,7 +1066,7 @@ Last element is always a leader.
 
 ### A-28 · Best Time to Buy and Sell Stock ⭐
 
-**Difficulty:** Easy–Medium | **Asked:** 2024, 2025, 2026
+**Difficulty:** Easy–Medium | **Pattern:** Greedy / Sliding Window | **Asked:** 2024, 2025, 2026
 
 **Problem:**
 Find maximum profit from one buy and one sell. Buy before sell.
@@ -1081,7 +1081,7 @@ Find maximum profit from one buy and one sell. Buy before sell.
 
 ### A-29 · Sequential Groups of Exactly N Items ⚠️
 
-**Difficulty:** Medium | **Asked:** 2025 — YOU WERE ASKED THIS
+**Difficulty:** Medium | **Pattern:** Array Chunking | **Asked:** 2025 — YOU WERE ASKED THIS
 
 **Problem:**
 From an array, return groups of exactly N consecutive items.
@@ -1096,7 +1096,7 @@ From an array, return groups of exactly N consecutive items.
 
 ### A-30 · Trapping Rainwater ⭐
 
-**Difficulty:** Hard | **Asked:** 2025, 2026
+**Difficulty:** Hard | **Pattern:** Two Pointers / Dynamic Programming | **Asked:** 2025, 2026
 
 **Problem:**
 Given heights, find total water that can be trapped after rain.
