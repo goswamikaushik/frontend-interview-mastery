@@ -37,7 +37,7 @@ function pattern(n) {
     let row = "";
     // space
     for (let j = 0; j < n - i - 1; j++) {
-      row += `0`;
+      row += ` `;
     }
 
     // stars
@@ -47,7 +47,7 @@ function pattern(n) {
 
     // space
     for (let j = 0; j < n - i - 1; j++) {
-      row += `0`;
+      row += ` `;
     }
 
     console.log(row);
